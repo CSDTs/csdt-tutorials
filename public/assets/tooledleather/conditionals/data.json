@@ -1,0 +1,68 @@
+{
+	"conditionals_1_project": {
+		"title": "Getting Started",
+		"category": "Conditionals",
+		"video": "conditionals-1.mp4",
+		"project": "tooledleather/conditionals/conditionals.xml",
+		"blocks": [],
+		"detailedGoal": "",
+		"simpleGoal": "",
+		"hint": "",
+		"poster": ""
+	},
+	"conditionals_2_project": {
+		"title": "Creating a Column",
+		"category": "Conditionals",
+		"video": "conditionals-2.mp4",
+		"project": "tooledleather/conditionals/conditionals.xml",
+		"blocks": [],
+		"detailedGoal": "",
+		"simpleGoal": "",
+		"hint": "",
+		"poster": ""
+	},
+	"conditionals_3_project": {
+		"title": "Setting and Changing Variables",
+		"category": "Conditionals",
+		"video": "conditionals-3.mp4",
+		"project": "tooledleather/conditionals/conditionals.xml",
+		"blocks": [],
+		"detailedGoal": "",
+		"simpleGoal": "",
+		"hint": "",
+		"poster": ""
+	},
+	"conditionals_4_project": {
+		"title": "The If Else Statement",
+		"category": "Conditionals",
+		"video": "conditionals-4.mp4",
+		"project": "tooledleather/conditionals/conditionals.xml",
+		"blocks": [],
+		"detailedGoal": "",
+		"simpleGoal": "",
+		"hint": "",
+		"poster": ""
+	},
+	"conditionals_5_project": {
+		"title": "Creating Multiple Columns",
+		"category": "Conditionals",
+		"video": "conditionals-5.mp4",
+		"project": "tooledleather/conditionals/conditionals.xml",
+		"blocks": [],
+		"detailedGoal": "",
+		"simpleGoal": "",
+		"hint": "",
+		"poster": ""
+	},
+	"conditionals_review": {
+		"title": "Next Steps",
+		"category": "Conditionals",
+		"video": "",
+		"project": "",
+		"blocks": [],
+		"detailedGoal": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"simpleGoal": "",
+		"hint": "",
+		"poster": "./tooledleather/conditionals/conditionals-tut.png"
+	}
+}
