@@ -1,0 +1,50 @@
+[
+	{
+		"tutorial_title": "Anishinaabe Quilting",
+		"tool": "Quilting",
+		"prefix": "quilting/anishinaabe/",
+		"base": "base.xml",
+		"globalModifiers": ["enableSinglePalette", "disableSinglePaletteButtons"]
+	},
+	{
+		"title": "Setting up Your Script",
+		"video": "anishinaabe-1.mp4",
+		"description": "To start your project, you need to use <img src='./img/whenClicked_block.png'/>. Anything attached to the block will run when the green flag is clicked. The green flag can be found above the stage, or in the block itself. <br><br> To clear your stage of all stamps and pen trails, use <img src='./img/clear_block.png'/>.<br><br> To move your sprite, use <img src='./img/goTo.png'/>. To move up, use a positive y value. To move down, use a negative value. To move left, use a negative x value. To move right, use a positive value.<br><br>To rotate your sprite, use <img src='./img/pointatblock.png'/>. It rotates to the angle that you give it. <br><br> These blocks will initialize(set up) your script, and allow you to start stamping your sprite onto the stage.",
+		"short": "Create the first part of your Anishinaabe quilt script."
+	},
+	{
+		"title": "Modifying Your Sprite",
+		"video": "anishinaabe-2.mp4",
+		"description": "You can change what your sprite looks like! The first thing you can do is change the costume, using <img src='./img/switchcostume.png'/>. Clicking on the block's dropdown menu will allow you to pick from a variety of costumes that are a part of the software. <br><br>Next, you can change the size of your sprite using <img src='./img/size.png'/>. This changes the size of the sprite based on the original size of costume it is wearing. So, changing the number to a larger number will mean large costumes. Changing it to a smaller number means small costumes. <br><br> Lastly, you can change the color of your sprite, using <img src='./img/setcoloreffect.png' style='width:150px'/>. Think of the color spectrum (ROYGBIV). The block takes a number value from 0 - 100, startinig with Red at 0. (You can also change the brightness of the color, the opacity, and saturation with the same effect block). <br><div class='row justify-content-center'><div class='col-5'><img src='./img/colorwheel.png' class='img-fluid'></div></div>",
+		"short": "Change your sprite to a red 'bigpetal'. "
+	},
+	{
+		"title": "Creating a Ring of Petals",
+		"video": "anishinaabe-3.mp4",
+		"description": "So far, you only have one stamp. However, the Anishinaabe quilt pattern has multiple parts, creating a radial (circular) design. You can repeat and stamp your sprite onto the stage using a similar heritage algorithm that the Anishinaabe uses in their quilts! <br><br> Let's use a <img src='./img/repeat.png'/> block. The block repeats any code that is inside it. It takes one parameter, the number of times to repeat the code. <br><br> Once you got that, next is to create the radial design. You can create these by using two blocks: <img src='./img/outstamp.png'/> and <img src='./img/rotatebyxdegrees.png'/>, found in the Pen and Motion categories respectively.<br><br>The <img src='./img/outstamp.png'/> block translates the sprite by its height x units (specified by you), stamps at that location, and translates back to its original location. <br><br>With combining the three blocks, you can stamp from the sprite's origin point and rotate to the next spot. <br><br>You can figure out rotation by this equation: <br><strong>360 / # of times you are repeating the code.</strong><br>Plug that value into <img src='./img/rotatebyxdegrees.png'/> and you got yourself the start of a radial design!",
+		"short": "Stamp and repeat your costume to make a ring of petals."
+	},
+	{
+		"title": "Creating a Ring of Flowers",
+		"video": "anishinaabe-4.mp4",
+		"description": "A helpful trick with CSnap is that you can copy and paste your code! This can save you time, especially when creating complicated designs. To do this, you can right click the block that you want to copy. There are two options, duplicate and the block image. <br><br> <strong>Duplicate</strong> will copy everything from the block you right clicked, downwards. So if you were to duplicate from the <img src='./img/goTo.png'/> block, it will duplicate this block, as well as your <img src='./img/repeat.png'/> and everything in it. <br><br>The code image will just duplicate the block you selected, i.e. just the one block. <br><br><strong>Note: make sure to change your parameter values within your duplicated code, if needed!</strong>",
+		"short": "Duplicate your radial design, and create a ring of yellow flowers."
+	},
+	{
+		"title": "Reflecting Your Design",
+		"video": "anishinaabe-5.mp4",
+		"description": "Within Anishinaabe quilts, you may have noticed that some images are reflected relative to their location. You can do the same thing, using a <img src='./img/reflect.png'/>. This block will flip your sprite on its y-axis based on its relative location.",
+		"short": "Create another ring of flowers, but reflected."
+	},
+	{
+		"title": "Adding the Medicine Wheel",
+		"video": "anishinaabe-6.mp4",
+		"description": "The last step of the quilt is to add the central element, the medicine wheel. The Anishinaabe use this to understand how the world is organized. Many things happen in circles, from the shape of a nest to the cycles of living creatures. And many things are divided into fours: the year has four seasons; the earth has four directions. <br><br>Adding a medicine wheel to the quilt just requires two blocks: <br><img src='./img/pointatblock.png'/> <br> <img src='./img/switchcostume.png'/>",
+		"short": "Add the medicine wheel to the quilt."
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"poster": "./anishinaabe.png"
+	}
+]

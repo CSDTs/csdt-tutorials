@@ -1,0 +1,42 @@
+[
+	{
+		"tutorial_title": "Functions in Quilting",
+		"tool": "Quilting",
+		"prefix": "quilting/functions/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Setting up Your Script",
+		"video": "functions-1.mp4"
+	},
+	{
+		"title": "Filling Out the Pattern",
+		"video": "functions-2.mp4"
+	},
+	{
+		"title": "Creating a New Block",
+		"video": "functions-3.mp4"
+	},
+	{
+		"title": "Adding Parameters to Custom Blocks",
+		"video": "functions-4.mp4"
+	},
+	{
+		"title": "Creating a Row of Diamonds",
+		"video": "functions-5.mp4"
+	},
+	{
+		"title": "Creating Another Custom Block",
+		"video": "functions-6.mp4"
+	},
+	{
+		"title": "Completing the Quilt",
+		"video": "functions-7.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"category": "Functions",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./functions-tut.png"
+	}
+]

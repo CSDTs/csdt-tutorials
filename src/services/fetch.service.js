@@ -18,7 +18,8 @@ const fetchLocalData = (url) => {
 };
 
 const selectSet = (tag) => {
-	const data = AvailableSets[tag || "tooled-leather-params"];
+	const validate = tag in AvailableSets ? tag : "tooled-leather-params";
+	const data = AvailableSets[validate];
 
 	return {
 		info: data[0]?.tutorial_title ? data[0] : "",

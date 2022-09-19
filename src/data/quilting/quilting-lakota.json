@@ -1,0 +1,49 @@
+[
+	{
+		"tutorial_title": "Lakota Quilting",
+		"tool": "Quilting",
+		"prefix": "quilting/lakota/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Setting up Your Script",
+		"video": "lakota-1.mp4",
+		"description": "To start your project, you need to use <img src='./img/whenClicked_block.png'/>. Anything attached to the block will run when the green flag is clicked. The green flag can be found above the stage, or in the block itself. <br><br> To clear your stage of all stamps and pen trails, use <img src='./img/clear_block.png'/>. <br><br> To move your sprite, use <img src='./img/goTo.png'/>. To move up, use a positive y value. To move down, use a negative value. To move left, use a negative x value. To move right, use a positive value.<br><br>To rotate your sprite, use <img src='./img/pointatblock.png'/>. It rotates to the angle that you give it. <br><br> To change the size of your sprite, you need to use <img src='./img/size.png'/>. This will set the size of the sprite based on the current costume it is wearing. Larger numbers mean larger sprite, smaller numbers mean smaller sprite.",
+		"short": "Position your sprite on the stage."
+	},
+	{
+		"title": "Changing Sprite Color and Transparency",
+		"video": "lakota-2.mp4",
+		"description": "You can change what your sprite looks like! The first thing you can change is the color of your sprite, using <img src='./img/setcoloreffect.png' style='width:150px'/>. Think of the color spectrum (ROYGBIV). The block takes a number value from 0 to 100, startinig with red at 0. <br><div class='row justify-content-center'><div class='col-5'><img src='./img/colorwheel.png' class='img-fluid'></div></div>The <img src='./img/setghost.png' style='width:150px'/> block allows you to change the transparency of your sprite. Keeping it at 0 will keep the sprite opaque, while changing the number to 100 will make it transparent (ghostly). <b>With the color effect block, you can click on its dropdown, and select 'ghost' to utilize the ghost effect.</b>",
+		"short": "Change the color and transparency of your sprite."
+	},
+	{
+		"title": "Creating a Ring of Diamonds",
+		"video": "lakota-3.mp4",
+		"description": "So far, you have been manipulating what your sprite looks like. Now it is time to stamp your sprite onto the stage, using <img src='./img/stamp.png'/>. <br><br>Based on the Lakota heritage algorithm, the next block to use is <img src='./img/edgeflip.png' style='width:75px'/>, which will allow you to flip your sprite along its edge. While you can have multiple <img src='./img/stamp.png'/> and <img src='./img/edgeflip.png' style='width:75px'/> blocks, you can actually repeat these blocks using a <img src='./img/repeat.png'/>.<br><br>Anything inside this block will repeat, given a number of times to repeat. This will allow you to create a ring of diamonds, as well as simplify your code a bit.",
+		"short": "Create a ring of diamonds."
+	},
+	{
+		"title": "Creating a Function",
+		"video": "lakota-4.mp4",
+		"description": "A trick to the software is that you can break up your code, using a concept of Functions. You can learn more about functions in the functions tutorial, but the main thing to know is that you can break up your code to manageable chunks. This avoids the need to scroll and allows more control over the flow of your code!<br><br>You create a function by first broadcasting a message, using <img src='./img/broadcast.png'/>. This will broadcast the name of a function to be executed. <br><br>You name a chunk of code as a function by using <img src='./img/receive.png'/>. With this block, if any <img src='./img/broadcast.png'/> blocks calls out a specific message, it will execute any code attached to it. ",
+		"short": "Create a function called 'circle2'."
+	},
+	{
+		"title": "Creating a Second Ring",
+		"video": "lakota-5.mp4",
+		"description": "With this concept of functions, you can create another circle of diamonds. With this, you will also need <img src='./img/translate_height.png'/>. This block takes two values, the units you want to translate(slide) by, and the direction. This will slide your sprite outwards, to allow you to create a second ring.",
+		"short": "Create the second ring of diamonds."
+	},
+	{
+		"title": "Creating a Third Ring",
+		"video": "lakota-6.mp4",
+		"description": "Why circles? <br><br> <blockquote class='blockquote' style='font-size:1rem; font-weight:300'><em>'Everything the Power of the World does is done in a circle.... Birds make their nest in circles, for theirs is the same religion as ours. The sun comes forth and goes down again in a circle.... The life of a man is a circle from childhood to childhood, and so it is in everything where power moves. Our tepees were round like the nests of birds, and these were always set in a circle, the nation's hoop’.</em> <footer class='blockquote-footer'>John Neihardt <cite title='Source Title'>Black Elk Speaks: Being the Life Story of a Holy Man of the Oglala Sioux (1961)</cite></footer></blockquote> With this in mind, you can add more circles to this design. Note how that simulation script allows a nice visualization of how the circles expand, with one more translation/stamp in each radius. You can even introduce new colors this way as well. <div class='row justify-content-center'><div class='col-12'><a href='./quilting/lakota/circles.png' target='_blank'><img src='./quilting/lakota/circles.png' class='img-fluid' /></a></div></div>",
+		"short": "Create the final ring using a new function, 'circle3'. "
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./lakota.png"
+	}
+]

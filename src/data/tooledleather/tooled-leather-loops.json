@@ -1,0 +1,40 @@
+[
+	{
+		"tutorial_title": "Loops in Tooled Leather",
+		"tool": "Tooled Leather",
+		"core": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doStamp", "doRepeat", "translatePercent"],
+		"prefix": "tooledleather/loops/",
+		"base": "tool-loops-base.xml",
+		"globalModifiers": ["enableSinglePalette", "disableTutorialTabs", "disableSinglePaletteButtons"]
+	},
+	{
+		"title": "Getting Started",
+		"video": "tool-loops-1.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear"]
+	},
+	{
+		"title": "Stamping and Translating",
+		"video": "tool-loops-2.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "translatePercent", "doStamp"]
+	},
+	{
+		"title": "The Repeat Block",
+		"video": "tool-loops-3.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "translatePercent", "doStamp", "doRepeat"]
+	},
+	{
+		"title": "Creating a Row",
+		"video": "tool-loops-4.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "translatePercent", "doStamp", "doRepeat"]
+	},
+	{
+		"title": "Creating Multiple Rows",
+		"video": "tool-loops-5.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "translatePercent", "doStamp", "doRepeat"]
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./tool-loops-outcome.png"
+	}
+]

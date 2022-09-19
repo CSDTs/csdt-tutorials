@@ -1,0 +1,48 @@
+[
+	{
+		"tutorial_title": "Parameters in Cornrow Curves",
+		"tool": "Cornrow Curves",
+		"prefix": "cornrows/parameters/",
+		"base": "base.xml",
+		"core": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear"]
+	},
+	{
+		"title": "Setting up Your Script",
+		"video": "parameters-1.mp4",
+
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Creating a Braid",
+		"video": "parameters-2.mp4",
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Bending Braid Curve",
+		"video": "parameters-3.mp4",
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Adding More Braids",
+		"video": "parameters-4.mp4",
+
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Creating Custom Costumes",
+		"video": "parameters-5.mp4",
+
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "enableTutorialTabs"]
+	},
+	{
+		"title": "Adding Braids and Saving Project",
+		"video": "parameters-6.mp4",
+
+		"modifiers": ["disableSinglePalette", "enableTutorialTabs"]
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./parameters-tut.png"
+	}
+]

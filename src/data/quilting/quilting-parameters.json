@@ -1,0 +1,45 @@
+[
+	{
+		"tutorial_title": "Parameters in Quilting",
+		"tool": "Quilting",
+		"core": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doStamp", "doSwitchToCostume"],
+		"prefix": "quilting/parameters/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Initializing Your Script",
+		"video": "parameters-1.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear"],
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Adding Another Costume",
+		"video": "parameters-2.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doSwitchToCostume", "doStamp"],
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Adding More Costumes",
+		"video": "parameters-3.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doSwitchToCostume", "doStamp"],
+		"modifiers": ["disableSinglePalette", "enableTutorialTabs"]
+	},
+	{
+		"title": "Creating the 'Sun' Costume",
+		"video": "parameters-4.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doSwitchToCostume", "doStamp"],
+		"modifiers": ["disableSinglePalette", "enableTutorialTabs"]
+	},
+	{
+		"title": "Saving Your Progress",
+		"video": "parameters-5.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doSwitchToCostume", "doStamp"],
+		"modifiers": ["disableSinglePalette", "enableTutorialTabs"]
+	},
+	{
+		"title": "Next Steps",
+		"category": "Parameters",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./quilting/parameters/parameters-tut.png"
+	}
+]

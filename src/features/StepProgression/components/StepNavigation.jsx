@@ -11,7 +11,7 @@ export default function StepNavigation({ current, available }) {
 	};
 
 	return (
-		<Flex py="5" align="center">
+		<Flex pt="5" align="center" mt={"auto"} className="third-step">
 			<Text>Step {current.get() + 1 + "/" + available.length}</Text>
 			<Box textAlign={"center"} w={"100%"}>
 				<button

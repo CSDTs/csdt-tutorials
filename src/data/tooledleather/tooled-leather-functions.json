@@ -1,0 +1,47 @@
+[
+	{
+		"tutorial_title": "Functions in Tooled Leather",
+		"tool": "Tooled Leather",
+
+		"prefix": "tooledleather/functions/",
+		"base": "tool-functions-base.xml",
+		"globalModifiers": ["disableTutorialTabs"]
+	},
+	{
+		"title": "Getting Started",
+		"video": "functions-1.mp4"
+	},
+	{
+		"title": "Creating a Knot",
+		"video": "functions-2.mp4"
+	},
+	{
+		"title": "Creating New Blocks",
+		"video": "functions-3.mp4"
+	},
+	{
+		"title": "Adding Values to New Blocks",
+		"video": "functions-4.mp4"
+	},
+	{
+		"title": "Creating a Circle of Knots",
+		"video": "functions-5.mp4"
+	},
+	{
+		"title": "Creating Another Block",
+		"video": "functions-6.mp4"
+	},
+	{
+		"title": "Creating a Row",
+		"video": "functions-7.mp4"
+	},
+	{
+		"title": "Creating an Array",
+		"video": "functions-8.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./tool-functions-outcome.png"
+	}
+]

@@ -1,0 +1,51 @@
+[
+	{
+		"tutorial_title": "Loops in Cornrow Curves",
+		"tool": "Cornrow Curves",
+		"prefix": "cornrows/loops/",
+		"base": "base.xml",
+		"core": [
+			"receiveGo",
+			"gotoXY",
+			"pointAtAngle",
+			"setScale",
+			"clear",
+			"doStamp",
+			"doSwitchToCostume",
+			"translatePercent",
+			"doRepeat",
+			"rotateByDegrees",
+			"newSizeOfCurrent",
+			"setEffect"
+		]
+	},
+	{
+		"title": "Setting up Your Script",
+		"video": "loops-1.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear"],
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons"]
+	},
+	{
+		"title": "Offsetting the Braid",
+		"video": "loops-2.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "translatePercent"],
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons"]
+	},
+	{
+		"title": "Create a Second Braid",
+		"video": "loops-3.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "translatePercent", "rotateByDegrees"],
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons"]
+	},
+	{
+		"title": "Creating Multiple Braids",
+		"video": "loops-4.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "translatePercent", "rotateByDegrees"],
+		"modifiers": ["disableSinglePalette"]
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"poster": "./loops-tut.png"
+	}
+]

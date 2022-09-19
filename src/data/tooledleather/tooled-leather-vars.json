@@ -1,0 +1,41 @@
+[
+	{
+		"tutorial_title": "Variables in Tooled Leather",
+		"tool": "Tooled Leather",
+		"prefix": "tooledleather/variables/",
+		"base": "tool-vars-base.xml"
+	},
+	{
+		"title": "Getting Started",
+		"video": "variables-1.mp4"
+	},
+	{
+		"title": "Script Variables",
+		"video": "variables-2.mp4"
+	},
+	{
+		"title": "Creating a First Row",
+		"video": "variables-3.mp4"
+	},
+	{
+		"title": "Creating a Rainbow Effect",
+		"video": "variables-4.mp4"
+	},
+	{
+		"title": "Simplify With Functions",
+		"video": "variables-5.mp4"
+	},
+	{
+		"title": "Creating a Second Row",
+		"video": "variables-6.mp4"
+	},
+	{
+		"title": "Creating a Third Row",
+		"video": "variables-7.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./tool-vars-outcome.png"
+	}
+]

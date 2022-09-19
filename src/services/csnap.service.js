@@ -16,6 +16,8 @@ const loadBaseProject = (url) => {
 	};
 };
 
+const loadWhitelistedBlocks = (ide, final, current) => {};
+
 const CSnapService = {
 	loadBaseProject,
 };

@@ -1,0 +1,33 @@
+[
+	{
+		"tutorial_title": "Functions in Cornrow Curves",
+		"tool": "Cornrow Curves",
+		"prefix": "cornrows/functions/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Setting up Your Script",
+		"video": "functions-1.mp4"
+	},
+	{
+		"title": "Creating a Square Wave",
+		"video": "functions-2.mp4"
+	},
+	{
+		"title": "Creating a Custom Block",
+		"video": "functions-3.mp4"
+	},
+	{
+		"title": "Adding Parameters to Blocks",
+		"video": "functions-4.mp4"
+	},
+	{
+		"title": "Creating Multiple Braids Using Loops",
+		"video": "functions-5.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./functions-tut.png"
+	}
+]

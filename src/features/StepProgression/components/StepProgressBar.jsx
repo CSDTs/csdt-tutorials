@@ -10,7 +10,7 @@ export default function StepProgressBar({ current, available }) {
 	return (
 		<Flex py="5" align="center">
 			<Box textAlign={"center"} w={"100%"}>
-				<Box className="progress-container">
+				<Box className="progress-container  fourth-step">
 					<Box className="progress" id="progress" w={`${(current.get() / (available.length - 1)) * 100 + "%"}`}></Box>
 
 					{available.map((item, index) => (

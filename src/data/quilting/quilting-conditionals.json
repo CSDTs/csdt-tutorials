@@ -1,0 +1,37 @@
+[
+	{
+		"tutorial_title": "Conditionals in Quilting",
+		"tool": "Quilting",
+		"prefix": "quilting/conditionals/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Setting up Your Script",
+		"video": "conditionals-1.mp4"
+	},
+	{
+		"title": "Creating a Row",
+		"video": "conditionals-2.mp4"
+	},
+	{
+		"title": "Variables and Colors",
+		"video": "conditionals-3.mp4"
+	},
+	{
+		"title": "Adding Conditionals to Loops",
+		"video": "conditionals-4.mp4"
+	},
+	{
+		"title": "Creating Multiple Conditional Checks",
+		"video": "conditionals-5.mp4"
+	},
+	{
+		"title": "Creating a Color Picker Block",
+		"video": "conditionals-6.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./quilting/conditionals/conditionals-tut.png"
+	}
+]

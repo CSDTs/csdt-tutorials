@@ -1,0 +1,33 @@
+[
+	{
+		"tutorial_title": "Loops in Tooled Leather",
+		"tool": "Tooled Leather",
+		"prefix": "tooledleather/conditionals/",
+		"base": "tool-conditionals-base.xml"
+	},
+	{
+		"title": "Getting Started",
+		"video": "conditionals-1.mp4"
+	},
+	{
+		"title": "Creating a Column",
+		"video": "conditionals-2.mp4"
+	},
+	{
+		"title": "Setting and Changing Variables",
+		"video": "conditionals-3.mp4"
+	},
+	{
+		"title": "The If Else Statement",
+		"video": "conditionals-4.mp4"
+	},
+	{
+		"title": "Creating Multiple Columns",
+		"video": "conditionals-5.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./tooledleather/conditionals/conditionals-tut.png"
+	}
+]

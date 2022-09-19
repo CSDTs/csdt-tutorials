@@ -1,0 +1,29 @@
+[
+	{
+		"tutorial_title": "Variables in Cornrow Curves",
+		"tool": "Cornrow Curves",
+		"prefix": "cornrows/variables/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Setting up Your Script",
+		"video": "variables-1.mp4"
+	},
+	{
+		"title": "Adding 'Rainbow' Effect to Custom Blocks",
+		"video": "variables-2.mp4"
+	},
+	{
+		"title": "Adding Parameters",
+		"video": "variables-3.mp4"
+	},
+	{
+		"title": "Adding Script Variables",
+		"video": "variables-4.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./variables-tut.png"
+	}
+]

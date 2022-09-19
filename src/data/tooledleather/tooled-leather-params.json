@@ -1,0 +1,39 @@
+[
+	{
+		"tutorial_title": "Parameters in Tooled Leather",
+		"tool": "Tooled Leather",
+		"core": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doSwitchToCostume", "doStamp"],
+		"prefix": "tooledleather/parameters/",
+		"base": "tool-params-base_v2.xml"
+	},
+	{
+		"title": "Getting Started",
+		"video": "tool-params-1.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear"],
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Switching Costumes",
+		"video": "tool-params-2.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doSwitchToCostume", "doStamp"],
+		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Adding More Costumes",
+		"video": "tool-params-3.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doSwitchToCostume", "doStamp"],
+		"modifiers": ["disableSinglePalette", "disableTutorialTabs"]
+	},
+	{
+		"title": "Drawing Your Own Costumes",
+		"video": "tool-params-4.mp4",
+		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "doSwitchToCostume", "doStamp"],
+		"modifiers": ["disableSinglePalette", "enableTutorialTabs"]
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./tool-params-outcome.png",
+		"modifiers": ["disableSinglePalette"]
+	}
+]

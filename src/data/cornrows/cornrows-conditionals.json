@@ -1,0 +1,29 @@
+[
+	{
+		"tutorial_title": "Conditionals in Cornrow Curves",
+		"tool": "Cornrow Curves",
+		"prefix": "cornrows/conditionals/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Setting up Your Script",
+		"video": "conditionals-1.mp4"
+	},
+	{
+		"title": "Creating a Second Braid",
+		"video": "conditionals-2.mp4"
+	},
+	{
+		"title": "Variables and Position",
+		"video": "conditionals-3.mp4"
+	},
+	{
+		"title": "Adding Conditionals to Loops",
+		"video": "conditionals-4.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./conditionals-tut.png"
+	}
+]

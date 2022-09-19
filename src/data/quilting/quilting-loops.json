@@ -1,0 +1,25 @@
+[
+	{
+		"tutorial_title": "Loops in Quilting",
+		"tool": "Quilting",
+		"prefix": "quilting/loops/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Creating a Single Flower",
+		"video": "loops-1.mp4"
+	},
+	{
+		"title": "Creating a Row of Flowers",
+		"video": "loops-2.mp4"
+	},
+	{
+		"title": "Creating Multiple Rows",
+		"video": "loops-3.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./quilting/loops/loops-tut.png"
+	}
+]

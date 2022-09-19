@@ -1,0 +1,37 @@
+[
+	{
+		"tutorial_title": "Variables in Quilting",
+		"tool": "Quilting",
+		"prefix": "quilting/variables/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Setting up Your Script With User Input",
+		"video": "variables-1.mp4"
+	},
+	{
+		"title": "Creating a Spiral",
+		"video": "variables-2.mp4"
+	},
+	{
+		"title": "Variables and Colors",
+		"video": "variables-3.mp4"
+	},
+	{
+		"title": "Creating a Custom Block",
+		"video": "variables-4.mp4"
+	},
+	{
+		"title": "Adding a New Costume",
+		"video": "variables-5.mp4"
+	},
+	{
+		"title": "Ask for the Square's Color",
+		"video": "variables-6.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./variables-tut.png"
+	}
+]

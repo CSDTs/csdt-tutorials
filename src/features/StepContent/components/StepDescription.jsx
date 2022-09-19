@@ -7,8 +7,9 @@ import {
 	Box,
 	Heading,
 } from "@chakra-ui/react";
+import { Parser } from "html-to-react";
 
-export default function StepDescription({ description }) {
+export default function StepDescription({ short, description }) {
 	return (
 		<>
 			<Heading size={"md"}>Description</Heading>
@@ -17,16 +18,12 @@ export default function StepDescription({ description }) {
 					<h2>
 						<AccordionButton>
 							<Box flex="1" textAlign="left">
-								Initialize your script
+								{short}
 							</Box>
 							<AccordionIcon />
 						</AccordionButton>
 					</h2>
-					<AccordionPanel pb={4}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-						ea commodo consequat.
-					</AccordionPanel>
+					<AccordionPanel pb={4}>{Parser().parse(description)}</AccordionPanel>
 				</AccordionItem>
 			</Accordion>
 		</>

@@ -4,6 +4,7 @@ import {
 	ButtonGroup,
 	chakra,
 	Drawer,
+	DrawerCloseButton,
 	DrawerContent,
 	DrawerOverlay,
 	Flex,
@@ -22,14 +23,15 @@ import { useParams } from "react-router-dom";
 
 import FetchService from "./services/fetch.service";
 
+import { TourProvider, useTour } from "@reactour/tour";
 import "./App.css";
-
 import { Footer, Navigation, SidebarContent } from "./layouts";
 
 function App() {
 	const sidebar = useDisclosure();
 
 	const { name } = useParams();
+	console.log(name);
 	const { info, data, isLoading } = FetchService.selectSet(name);
 
 	const [availableSteps, setAvailableSteps] = useState(null);
@@ -46,6 +48,12 @@ function App() {
 			setBase(info.prefix + info.base);
 		}
 	}, [data]);
+	const { setIsOpen } = useTour();
+	useEffect(() => {
+		// setIsOpen(true);
+
+		console.log(info);
+	}, [info]);
 
 	return (
 		<Box
@@ -54,21 +62,29 @@ function App() {
 			_dark={{
 				bg: "gray.700",
 			}}
-			minH="100vh">
+			minH="100vh"
+			className="first-step final-step">
 			<SidebarContent
 				display={{
 					base: "none",
-					md: "unset",
+					md: "flex",
 				}}
+				flexDirection="column"
 				info={info}
 				step={currentStep}
 				setStep={setCurrentStep}
 				available={availableSteps}
+				className="second-step"
 			/>
-			<Drawer isOpen={sidebar.isOpen} onClose={sidebar.onClose} placement="left">
+			<Drawer isOpen={sidebar.isOpen} onClose={sidebar.onClose} placement="left" zIndex={"auto"}>
 				<DrawerOverlay />
 				<DrawerContent>
+					<DrawerCloseButton zIndex={1} />
 					<SidebarContent
+						display={{
+							base: "flex",
+						}}
+						flexDirection="column"
 						w="full"
 						borderRight="none"
 						info={info}
@@ -85,12 +101,30 @@ function App() {
 				}}
 				transition=".3s ease">
 				<Navigation />
+
 				<Box as="main" p="4">
 					<Heading mb={2} size="lg">
 						{currentStep?.title}
 					</Heading>
-
-					{base && <CSnap base={base} whitelist={currentStep?.whitelist} />}
+					{/* <button onClick={() => setIsOpen(true)}>Open Tour</button>{" "} */}
+					<Button
+						colorScheme="teal"
+						onClick={sidebar.onOpen}
+						display={{
+							base: "block",
+							md: "none",
+						}}>
+						Open
+					</Button>
+					{base && (
+						<CSnap
+							base={base}
+							coreList={info?.core}
+							whitelist={currentStep?.whitelist}
+							modifiers={currentStep?.modifiers}
+							globalModifiers={info?.globalModifiers}
+						/>
+					)}
 				</Box>
 				<Footer tool={info?.tool} />
 			</Box>
