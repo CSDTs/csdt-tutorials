@@ -33,7 +33,8 @@
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
-		"outcome": "./tool-params-outcome.png",
-		"modifiers": ["disableSinglePalette"]
+		"outcome": "tool-params-outcome.png",
+		"background": "tooledleather/index.html",
+		"software": "tooledleather/software.html"
 	}
 ]

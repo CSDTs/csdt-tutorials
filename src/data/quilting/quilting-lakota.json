@@ -38,12 +38,14 @@
 	{
 		"title": "Creating a Third Ring",
 		"video": "lakota-6.mp4",
-		"description": "Why circles? <br><br> <blockquote class='blockquote' style='font-size:1rem; font-weight:300'><em>'Everything the Power of the World does is done in a circle.... Birds make their nest in circles, for theirs is the same religion as ours. The sun comes forth and goes down again in a circle.... The life of a man is a circle from childhood to childhood, and so it is in everything where power moves. Our tepees were round like the nests of birds, and these were always set in a circle, the nation's hoop’.</em> <footer class='blockquote-footer'>John Neihardt <cite title='Source Title'>Black Elk Speaks: Being the Life Story of a Holy Man of the Oglala Sioux (1961)</cite></footer></blockquote> With this in mind, you can add more circles to this design. Note how that simulation script allows a nice visualization of how the circles expand, with one more translation/stamp in each radius. You can even introduce new colors this way as well. <div class='row justify-content-center'><div class='col-12'><a href='./quilting/lakota/circles.png' target='_blank'><img src='./quilting/lakota/circles.png' class='img-fluid' /></a></div></div>",
+		"description": "Why circles? <br><br> <blockquote class='blockquote' style='font-size:1rem; font-weight:300'><em>'Everything the Power of the World does is done in a circle.... Birds make their nest in circles, for theirs is the same religion as ours. The sun comes forth and goes down again in a circle.... The life of a man is a circle from childhood to childhood, and so it is in everything where power moves. Our tepees were round like the nests of birds, and these were always set in a circle, the nation's hoop’.</em> <footer class='blockquote-footer'>John Neihardt <cite title='Source Title'>Black Elk Speaks: Being the Life Story of a Holy Man of the Oglala Sioux (1961)</cite></footer></blockquote> With this in mind, you can add more circles to this design. Note how that simulation script allows a nice visualization of how the circles expand, with one more translation/stamp in each radius. You can even introduce new colors this way as well. <div class='row justify-content-center'><div class='col-12'><a href='./img/circles.png' target='_blank'><img src='./img/circles.png' class='img-fluid' /></a></div></div>",
 		"short": "Create the final ring using a new function, 'circle3'. "
 	},
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
-		"outcome": "./lakota.png"
+		"outcome": "lakota.png",
+		"background": "quilting/index.html",
+		"software": "quilting/software.html"
 	}
 ]

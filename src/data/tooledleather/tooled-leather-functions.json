@@ -2,10 +2,8 @@
 	{
 		"tutorial_title": "Functions in Tooled Leather",
 		"tool": "Tooled Leather",
-
 		"prefix": "tooledleather/functions/",
-		"base": "tool-functions-base.xml",
-		"globalModifiers": ["disableTutorialTabs"]
+		"base": "tool-functions-base.xml"
 	},
 	{
 		"title": "Getting Started",
@@ -42,6 +40,8 @@
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
-		"outcome": "./tool-functions-outcome.png"
+		"outcome": "tool-functions-outcome.png",
+		"background": "tooledleather/index.html",
+		"software": "tooledleather/software.html"
 	}
 ]

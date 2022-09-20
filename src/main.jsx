@@ -52,6 +52,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 					<Routes>
 						<Route path="/" element={<Homepage />} />
 						<Route path="/:name" element={<App />} />
+						<Route path="*" element={<Homepage />} />
 					</Routes>
 				</ChakraProvider>
 			</TourProvider>

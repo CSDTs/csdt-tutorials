@@ -39,6 +39,8 @@
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to recreate Akoma in the software by yourself! You may even be able to attempt other symbols as well.",
-		"outcome": "./akoma_final.png"
+		"outcome": "akoma-tut.png",
+		"background": "adinkra/index.html",
+		"software": "adinkra/software.html"
 	}
 ]

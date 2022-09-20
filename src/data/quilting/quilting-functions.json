@@ -37,6 +37,8 @@
 		"title": "Next Steps",
 		"category": "Functions",
 		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
-		"outcome": "./functions-tut.png"
+		"outcome": "functions-tut.png",
+		"background": "quilting/index.html",
+		"software": "quilting/software.html"
 	}
 ]

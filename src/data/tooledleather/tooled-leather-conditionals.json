@@ -1,6 +1,6 @@
 [
 	{
-		"tutorial_title": "Loops in Tooled Leather",
+		"tutorial_title": "Conditionals in Tooled Leather",
 		"tool": "Tooled Leather",
 		"prefix": "tooledleather/conditionals/",
 		"base": "tool-conditionals-base.xml"
@@ -28,6 +28,8 @@
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
-		"outcome": "./tooledleather/conditionals/conditionals-tut.png"
+		"outcome": "tool-conditionals-outcome.png",
+		"background": "tooledleather/index.html",
+		"software": "tooledleather/software.html"
 	}
 ]

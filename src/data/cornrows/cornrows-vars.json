@@ -24,6 +24,8 @@
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
-		"outcome": "./variables-tut.png"
+		"outcome": "variables-tut.png",
+		"background": "cornrowcurves/index.html",
+		"software": "cornrowcurves/software.html"
 	}
 ]

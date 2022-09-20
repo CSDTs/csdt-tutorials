@@ -21,6 +21,8 @@
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to recreate sepow in the software by yourself! You may even be able to attempt other symbols as well.",
-		"outcome": "./adinkra/sepow/sepow-tut.png"
+		"outcome": "sepow-tut.png",
+		"background": "adinkra/index.html",
+		"software": "adinkra/software.html"
 	}
 ]

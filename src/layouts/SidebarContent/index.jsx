@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Stack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Stack } from "@chakra-ui/react";
 import { TourProvider } from "@reactour/tour";
 import { useState } from "react";
 import { StepDescription, StepVideo } from "../../features/StepContent";
@@ -26,6 +26,7 @@ export default function SidebarContent(props) {
 			borderColor="blackAlpha.300"
 			borderRightWidth="1px"
 			w={96}
+			transition=".3s ease"
 			zIndex={"auto"}
 			{...styles}>
 			<Box py="5">
@@ -51,6 +52,8 @@ export default function SidebarContent(props) {
 					{step?.description && <StepDescription description={step?.description} short={step?.short} />}
 
 					{step?.video && <StepVideo url={info?.prefix + step?.video} />}
+
+					{step?.outcome && <Image src={"assets/" + info?.prefix + step?.outcome} />}
 				</Flex>
 			</Stack>
 			{available && available.length > 0 && (

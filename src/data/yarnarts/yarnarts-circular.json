@@ -50,6 +50,8 @@
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
-		"poster": "./circle-tut.png"
+		"outcome": "circle-tut.png",
+		"background": "yarnarts/index.html",
+		"software": "yarnarts/software.html"
 	}
 ]

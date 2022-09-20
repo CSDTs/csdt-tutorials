@@ -51,7 +51,7 @@
             <watcher scope="Stage" s="getLastAnswer" style="normal" x="10.187500000000341" y="352.48753259999995" color="4,148,220" hidden="true"/>
         </sprites>
     </stage>
-    <hidden> setHeading direction</hidden>
+    <hidden>setHeading direction</hidden>
     <headers></headers>
     <code></code>
     <blocks></blocks>

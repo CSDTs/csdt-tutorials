@@ -17,6 +17,8 @@
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to recreate mpuannum in the software by yourself! You may even be able to attempt other symbols as well.",
-		"outcome": "./adinkra/mpuannum/mpuannum-tut.png"
+		"outcome": "mpuannum-goal-2.png",
+		"background": "adinkra/index.html",
+		"software": "adinkra/software.html"
 	}
 ]

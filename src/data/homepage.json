@@ -110,11 +110,11 @@
 		"names": [
 			{
 				"name": "Rectangular",
-				"slug": "yarnarts-programming"
+				"slug": "yarnarts-rectangular"
 			},
 			{
 				"name": "Circular",
-				"slug": "yarnarts-programming"
+				"slug": "yarnarts-circular"
 			}
 		]
 	},

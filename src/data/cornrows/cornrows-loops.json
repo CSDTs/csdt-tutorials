@@ -46,6 +46,8 @@
 	{
 		"title": "Next Steps",
 		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
-		"poster": "./loops-tut.png"
+		"poster": "loops-tut.png",
+		"background": "cornrowcurves/index.html",
+		"software": "cornrowcurves/software.html"
 	}
 ]

@@ -42,7 +42,13 @@ const SocialButton = ({ children, label, href }) => {
 
 export default function Footer({ tool }) {
 	return (
-		<Box bg={useColorModeValue("white", "gray.800")} color={useColorModeValue("gray.600", "white")}>
+		<Box
+			bg={useColorModeValue("white", "gray.800")}
+			color={useColorModeValue("gray.600", "white")}
+			mt={"auto"}
+			borderTop={1}
+			borderStyle={"solid"}
+			borderColor={useColorModeValue("gray.200", "gray.900")}>
 			<Container
 				as={Stack}
 				maxW={"6xl"}
@@ -50,9 +56,7 @@ export default function Footer({ tool }) {
 				direction={{ base: "column", md: "row" }}
 				spacing={4}
 				// justify={{ base: "center", md: "space-between" }}
-				borderTop={1}
-				borderStyle={"solid"}
-				borderColor={useColorModeValue("gray.200", "gray.900")}
+
 				justify={{ base: "center", md: "center" }}
 				align={{ base: "center", md: "center" }}>
 				{/* <Logo /> */}

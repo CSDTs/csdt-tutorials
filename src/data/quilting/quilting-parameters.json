@@ -40,6 +40,8 @@
 		"title": "Next Steps",
 		"category": "Parameters",
 		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
-		"outcome": "./quilting/parameters/parameters-tut.png"
+		"outcome": "parameters-tut.png",
+		"background": "quilting/index.html",
+		"software": "quilting/software.html"
 	}
 ]

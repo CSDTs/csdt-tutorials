@@ -16,9 +16,9 @@ import { FaCog } from "react-icons/fa";
 import CSnapService from "../../../services/csnap.service";
 import { LoadContainer } from "../../Loading";
 
-export default function CSnap({ base, coreList, whitelist, modifiers, globalModifiers }) {
+export default function CSnap({ base, coreList, whitelist, modifiers, globalModifiers, ide, setIde }) {
 	const csnap = useRef(null);
-	const [ide, setIde] = useState(null);
+	// const [ide, setIde] = useState(null);
 	const { data, isLoading, isError } = CSnapService.loadBaseProject(`assets/${base}`);
 
 	const [blocks, setBlocks] = useState(null);
@@ -69,37 +69,6 @@ export default function CSnap({ base, coreList, whitelist, modifiers, globalModi
 
 	return (
 		<LoadContainer isLoading={isLoading} isError={isError}>
-			<Menu closeOnSelect={false}>
-				<MenuButton as={Button} colorScheme="blue" className=" sixth-step">
-					<FaCog />
-				</MenuButton>
-				<MenuList minWidth="240px">
-					<MenuOptionGroup title="Toggles" type="checkbox">
-						<MenuItemOption value="singlePalette" onClick={() => ide.toggleSinglePalette()}>
-							Toggle Single Palette
-						</MenuItemOption>
-						<MenuItemOption value="corralBar" onClick={() => ide.toggleCorralBar()}>
-							Toggle Corral Bar
-						</MenuItemOption>
-						<MenuItemOption value="tabs" onClick={() => ide.toggleTabs()}>
-							Toggle Tabs
-						</MenuItemOption>
-						<MenuItemOption value="spriteBar" onClick={() => ide.toggleSpriteBar()}>
-							Toggle Sprite Bar
-						</MenuItemOption>
-					</MenuOptionGroup>
-					<MenuDivider />
-					<MenuOptionGroup title="Debug" type="checkbox">
-						<MenuItemOption value="fetchBlocks" onClick={() => console.log(ide.fetchBlockList())}>
-							Fetch Blocks
-						</MenuItemOption>
-						<MenuItemOption value="hideGoTo" onClick={() => ide.hideBlock()}>
-							Hide Go To Block
-						</MenuItemOption>
-						<MenuItemOption value="country">Country</MenuItemOption>
-					</MenuOptionGroup>
-				</MenuList>
-			</Menu>
 			<Box borderWidth="4px" borderStyle="dashed" rounded="md" h="80vh" className=" fifth-step">
 				<chakra.iframe
 					src="csnap_pro/csdt/snap.html"

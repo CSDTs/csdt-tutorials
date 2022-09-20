@@ -20,7 +20,9 @@
 	},
 	{
 		"title": "Next Steps",
-		"description": "You completed the tutorial. You should now be able to recreate ananse in the software by yourself! You may even be able to attempt other symbols as well.",
-		"outcome": "./ananse-tut.png"
+		"nextSteps": "You completed the tutorial. You should now be able to recreate ananse in the software by yourself! You may even be able to attempt other symbols as well.",
+		"outcome": "ananse-tut.png",
+		"background": "adinkra/index.html",
+		"software": "adinkra/software.html"
 	}
 ]
