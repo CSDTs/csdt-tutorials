@@ -1,0 +1,22 @@
+[
+	{
+		"tutorial_title": "Creating Mpuannum",
+		"tool": "Adinkra",
+		"prefix": "adinkra/mpuannum/",
+		"base": "base.xml",
+		"globalModifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Setting Up Mpuannum",
+		"video": "mpuannum-1.mp4"
+	},
+	{
+		"title": "Drawing the Remaining Circles",
+		"video": "mpuannum-2.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to recreate mpuannum in the software by yourself! You may even be able to attempt other symbols as well.",
+		"outcome": "./adinkra/mpuannum/mpuannum-tut.png"
+	}
+]

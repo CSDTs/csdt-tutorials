@@ -1,0 +1,26 @@
+[
+	{
+		"tutorial_title": "Creating Sepow",
+		"tool": "Adinkra",
+		"prefix": "adinkra/sepow/",
+		"base": "base.xml",
+		"globalModifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Setting Up Sepow",
+		"video": "sepow-1.mp4"
+	},
+	{
+		"title": "Drawing a Line",
+		"video": "sepow-2.mp4"
+	},
+	{
+		"title": "Finishing Up the Triangle",
+		"video": "sepow-3.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to recreate sepow in the software by yourself! You may even be able to attempt other symbols as well.",
+		"outcome": "./adinkra/sepow/sepow-tut.png"
+	}
+]

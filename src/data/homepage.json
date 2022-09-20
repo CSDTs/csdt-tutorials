@@ -117,5 +117,27 @@
 				"slug": "yarnarts-programming"
 			}
 		]
+	},
+	{
+		"title": "Adinkra",
+		"thumbnail": "",
+		"names": [
+			{
+				"name": "Akoma",
+				"slug": "adinkra-akoma"
+			},
+			{
+				"name": "Mpuannum",
+				"slug": "adinkra-mpuannum"
+			},
+			{
+				"name": "Sepow",
+				"slug": "adinkra-sepow"
+			},
+			{
+				"name": "Ananse",
+				"slug": "adinkra-ananse"
+			}
+		]
 	}
 ]

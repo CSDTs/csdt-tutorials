@@ -1,0 +1,26 @@
+[
+	{
+		"tutorial_title": "Creating Ananse",
+		"tool": "Adinkra",
+		"prefix": "adinkra/ananse/",
+		"base": "base.xml",
+		"globalModifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Setting Up Ananse",
+		"video": "ananse-1.mp4"
+	},
+	{
+		"title": "Drawing a Line",
+		"video": "ananse-2.mp4"
+	},
+	{
+		"title": "Finishing Up Through Iteration",
+		"video": "ananse-3.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"description": "You completed the tutorial. You should now be able to recreate ananse in the software by yourself! You may even be able to attempt other symbols as well.",
+		"outcome": "./ananse-tut.png"
+	}
+]

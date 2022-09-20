@@ -1,0 +1,44 @@
+[
+	{
+		"tutorial_title": "Creating Akoma",
+		"tool": "Adinkra",
+		"prefix": "adinkra/akoma/",
+		"base": "base.xml",
+		"globalModifiers": ["enableSinglePalette", "disableSinglePaletteButtons", "disableTutorialTabs"]
+	},
+	{
+		"title": "Set Up Akoma",
+		"video": "akoma-1.mp4",
+		"description": "To start your project, you need to use <strong>When Clicked</strong>, found in the Control category. Anything attached to the block will run when the green flag is clicked. The green flag can be found above the stage, or in the block itself. <br><br> To clear your stage of all stamps and pen trails, use <strong>Clear</strong>, located in the Pen category. <br><br> To move your sprite, use <strong>Go to</strong>, located in the Motion category. To move up, use a positive y value. To move down, use a negative value. To move left, use a negative x value. To move right, use a positive value.<br><br>To rotate your sprite, use <strong>Point at Angle</strong>, located in the Motion category. It rotates to the angle that you give it. <br><br>These five blocks set up the Akoma symbol with a starting location and rotation.",
+		"short": "Set up your script. ",
+		"hint": "akoma_solution_1.mp4"
+	},
+	{
+		"title": "Draw a Log Spiral",
+		"video": "akoma-2.mp4",
+
+		"description": "To create a spiral on the stage, use <strong>log spiral</strong>, located in the Pen category. It takes five values: <br><br><ul><li class='mb-2'><strong>C(the coil value)</strong>: Determines how tightly coiled your spiral is. Larger the number, tighter the coil. <em>Note: try to use values between 0.1 and 1</em></li><li class='mb-2'><strong>Sweep</strong>: The angle in which the log spiral stops at.</li> <li class='mb-2'><strong>Size</strong>: The size of the spiral.</li><li class='mb-2'><strong>Pen Growth</strong>: The rate at which the pen size grows at. Keeping it at 0 gives it a consistent size throughout. A positive number grows the pen size as it draws. A negative number shrinks the size.</li><li class='mb-2'><strong>Clockwise?</strong>: Asking you if you want your spiral to draw clockwise or counterclockwise.</li></ul>",
+		"short": "Draw the first log spiral.",
+		"hint": "akoma_solution_2.mp4"
+	},
+	{
+		"title": "Draw a Line",
+		"video": "akoma-3.mp4",
+
+		"description": "The <strong>line</strong> block, located in the Pen category, allows you to draw a line at your current location. It takes in three values: <br><br><ul><li><strong>Length</strong>: The length of the line. To draw your line forward, use a positive number. To draw your line backwards, use a negative number.</li><li><strong>Pen Growth</strong>: The rate at which the pen size grows as it is being drawn. Negative number means it shrinks. Positive number meanss it grows. Keeping it at zero keeps the size consistent.</li><li><strong>Round end?</strong>: Asking you if you want to have a rounded end for your line or not.</li></ul>",
+		"short": "Draw the first line.",
+		"hint": "akoma_solution_3.mp4"
+	},
+	{
+		"title": "Finish the Akoma Symbol",
+		"video": "akoma-4.mp4",
+		"description": "The last thing to do is to finish the second half of the Akoma Adinkra symbol. An easy way of doing this is to <strong>right click on the go to</strong> block, select <strong>Duplicate</strong>. <br><br>This copies everything from that block, downwards. <br><br>Reflecting the second half involves: <br><br><ul><li>Switching the copied go to x location from positive to negative.</li> <li>Switching the copied boolean(True/False) block in the copied log spiral block from positive to negative.</li></ul>",
+		"short": "Duplicate your code, and reverse it to create the second half.",
+		"hint": "akoma_solution_4.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to recreate Akoma in the software by yourself! You may even be able to attempt other symbols as well.",
+		"outcome": "./akoma_final.png"
+	}
+]

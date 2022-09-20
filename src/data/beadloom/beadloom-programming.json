@@ -1,1 +1,45 @@
-[]
+[
+	{
+		"tutorial_title": "Programming Bead Loom",
+		"tool": "Bead Loom",
+		"prefix": "beadloom/main/",
+		"base": "base.xml"
+	},
+	{
+		"title": "Setting Up a Variable",
+		"video": "beadloom-1.mp4"
+	},
+	{
+		"title": "Set Up our Starting Points: (x, y)",
+		"video": "beadloom-2.mp4"
+	},
+	{
+		"title": "Loops and Loops Within Loops",
+		"video": "beadloom-3.mp4"
+	},
+	{
+		"title": "Making a Row of Beads",
+		"video": "beadloom-4.mp4"
+	},
+	{
+		"title": "Carriage Return our Beads",
+		"video": "beadloom-5.mp4"
+	},
+	{
+		"title": "Increment Var and Set to Costume Color",
+		"video": "beadloom-6.mp4"
+	},
+	{
+		"title": "Update the Loop",
+		"video": "beadloom-7.mp4"
+	},
+	{
+		"title": "Look at What we Made!",
+		"video": "beadloom-8.mp4"
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "./main-tut.png"
+	}
+]
