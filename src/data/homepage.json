@@ -139,5 +139,23 @@
 				"slug": "adinkra-ananse"
 			}
 		]
+	},
+	{
+		"title": "Misc",
+		"thumbnail": "",
+		"names": [
+			{
+				"name": "PreColumbian Pyramids",
+				"slug": "precolumbian-pyramids"
+			},
+			{
+				"name": "Woven Heaven, Tangled Earth",
+				"slug": "whte-main"
+			},
+			{
+				"name": "Anishinaabe Arcs",
+				"slug": "anishinaabe-arcs"
+			}
+		]
 	}
 ]

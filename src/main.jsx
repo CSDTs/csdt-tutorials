@@ -1,4 +1,4 @@
-import { ChakraProvider, Text } from "@chakra-ui/react";
+import { Box, Button, ChakraProvider, Text } from "@chakra-ui/react";
 import { TourProvider, useTour } from "@reactour/tour";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -9,37 +9,85 @@ import Homepage from "./pages/Homepage";
 
 const steps = [
 	{
-		selector: ".first-step",
-		content: `Welcome to the tutorial! Let's get familiar with the interface.`,
+		// selector: ".first-step",
+		content: () => (
+			<Box>
+				<Text color={"gray.800"}>Welcome to the tutorial! Let's get familiar with the interface.</Text>
+			</Box>
+		),
 	},
 	{
 		selector: ".second-step",
-		content: `This sidebar holds all the available information for the current step.`,
+		content: () => (
+			<Box>
+				<Text color={"gray.800"}>This sidebar holds all the available information for the current step.</Text>
+			</Box>
+		),
 	},
 	{
 		selector: ".third-step",
-		content: `You can advance to the next step, or go back to the previous step.`,
+		content: () => (
+			<Box>
+				<Text color={"gray.800"}>You can advance to the next step, or go back to the previous step.</Text>
+			</Box>
+		),
 	},
 	{
 		selector: ".fourth-step",
-		content: `You can also click on a specific step here.`,
+		content: () => (
+			<Box>
+				<Text color={"gray.800"}>You can also click on a specific step here, as well as track your progress.</Text>
+			</Box>
+		),
 	},
 	{
 		selector: ".fifth-step",
-		content: `This is CSnap. You create your scripts here. Once finished, you click on the green flag to run your code.`,
+		content: () => (
+			<Box>
+				<Text color={"gray.800"}>
+					This is CSnap. You create your scripts here. Once finished, you click on the green flag to run your code.
+				</Text>
+			</Box>
+		),
 	},
 	{
 		selector: ".sixth-step",
-		content: `You can adjust the current tutorial with modifiers, found here.`,
+		content: () => (
+			<Box>
+				<Text color={"gray.800"}>
+					You can adjust the current tutorial with modifiers, found here. Or adjust the layout to make doing the
+					tutorial easier.
+				</Text>
+			</Box>
+		),
+	},
+	{
+		selector: ".seventh-step",
+		content: () => (
+			<Box>
+				<Text color={"gray.800"}>You can jump to a specific step here.</Text>
+			</Box>
+		),
+	},
+	{
+		selector: ".help-step",
+		content: () => (
+			<Box>
+				<Text color={"gray.800"}>
+					If you find yourself struggling with using CSnap, check out our help section here for more information.
+				</Text>
+			</Box>
+		),
 	},
 
 	{
-		selector: ".final-step",
 		content: ({ setIsOpen }) => (
-			<div>
-				<Text>Finally, you are ready to begin.</Text>
-				<button onClick={() => setIsOpen((o) => false)}>Toggle Tour</button>
-			</div>
+			<Box>
+				<Text color={"gray.800"}>Finally, you are ready to begin.</Text>
+				<Button onClick={() => setIsOpen((o) => false)} w={"100%"} mt={4} colorScheme="blue">
+					End Tour
+				</Button>
+			</Box>
 		),
 	},
 ];
@@ -47,15 +95,11 @@ const steps = [
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<TourProvider steps={steps}>
-				<ChakraProvider>
-					<Routes>
-						<Route path="/" element={<Homepage />} />
-						<Route path="/:name" element={<App />} />
-						<Route path="*" element={<Homepage />} />
-					</Routes>
-				</ChakraProvider>
-			</TourProvider>
+			<ChakraProvider>
+				<TourProvider steps={steps}>
+					<App />
+				</TourProvider>
+			</ChakraProvider>
 		</BrowserRouter>
 	</React.StrictMode>
 );

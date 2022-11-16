@@ -1,0 +1,88 @@
+[
+	{
+		"tutorial_title": "Anishinaabe Arcs",
+		"tool": "Anishinaabe Arcs",
+		"module": "Anishinaabe Arcs",
+		"prefix": "anishinaabearcs/main/",
+		"legacy": true,
+		"base": "arcs-base.xml"
+	},
+	{
+		"title": "A Single Arc",
+		"video": "step0.mp4",
+		"description": "Drag the “when clicked” Control block to the right (click and hold while moving the mouse).. The “when clicked” block starts the program.. Now you can create a script to create an arc.. The “angle” Motion block will tell the middle of the arc which directions to point.. The “go to” Motion block will tell the arc where to move along the x, y, and z axes.. The “clear” Pen block will erase all prior drawing on the stage.. The “pen size” Pen block will allow you to set the diameter of the arc's cross section. The “arc” Pen block will allow you to draw an arc by specifying the width and height.. ",
+		"short": "Create your first arc by dragging in blocks into the scripting panel."
+	},
+	{
+		"title": "Running the Program",
+		"video": "flag.mp4",
+		"description": "The green flag button is in the upper right corner, just above the stage.. When you click the green flag button it tells the “when clicked” block to run the program, stepping through each block in the script to create a arc.. ",
+		"short": "Click the green flag to run."
+	},
+	{
+		"title": "Positioning",
+		"video": "positioning.mp4",
+		"description": "The “angle” block controls where the middle of the arc is pointing.. The “go to” block controls where the arc will be positioned on the coordinate grid.. Update angle to 90 degree angle along the Z axis and position it to x: 0, y: -80, z: 0.",
+		"short": "Reorientate your arc."
+	},
+	{
+		"title": "Making a Structure",
+		"video": "step1.mp4",
+		"description": "Drag the “repeat” Control block into the script panel.. Place the “arc” block into the “repeat” block.. Drag the “translate” block into the scripting panel and place it inside of the “repeat” block.. The width, height, and depth of the translation by clicking on the drop down menu within the “translate” block itself.",
+		"short": "Iterate and translate your arc using the “repeat” and “translate” blocks."
+	},
+	{
+		"title": "Making Beautiful Structures",
+		"description": "The translate block controls the spacing.. The repeat block controls the number of iterations.",
+		"short": "Create 8 arcs with each translating by 20."
+	},
+	{
+		"title": "Make Two Variables",
+		"video": "step2.mp4",
+		"description": "In the block library you will find a “make a variable” button. Click on it to make your first variable.. When the “Variable name” window pops up type in width.. Click “OK” and a width variable will appear.. Do the same thing but for creating a height variable.",
+		"short": "Make variables for width & height."
+	},
+	{
+		"title": "Setting Variables",
+		"video": "step3.mp4",
+		"description": "Drag in two “set to” Variable blocks, place them at the beginning of your script, and set them to 100 each.. In the “set to” blocks use the drop down menu to select the variables you just created: width and height.. Find the “width” and “height” Variable blocks that you just create and drag them into the aligning width and height values in the “arc” block.",
+		"short": "Set your width and height variables by dragging in two “set to” Variable block."
+	},
+	{
+		"title": "Change Blocks",
+		"video": "step4.mp4",
+		"description": "Drag in two “change by” Variable blocks and place them below the “translate” block in your “repeat” block.. In each “change by” block use the drop down menu to select the variables you just created: width and height.. Change the values in each “change by” block to 10.",
+		"short": "Change the your variables every iteration using the “change by” Variable blocks."
+	},
+	{
+		"title": "A New Variable",
+
+		"description": "In the block library you will find a “make a variable” button. Click on it to make your first variable.. When the “Variable name” window pops up type in increment.. Click “OK” and a increment variable will appear.",
+		"short": "Make a variable for increment."
+	},
+	{
+		"title": "Setting Increment",
+		"video": "setincrement.mp4",
+		"description": "Drag in two “change by” Variable blocks and place them below the “translate” block in your “repeat” block.. In each “change by” block use the drop down menu to select the variables you just created: width and height.. Change the values in each “change by” block to 10.",
+		"short": "Set Increment to 10 at the beginning of the script."
+	},
+	{
+		"title": "Changing Variables with Variables",
+		"video": "step5.mp4",
+		"description": "Find the “increment” Variable blocks that you just create and drag it into the “change by” height and width blocks.",
+		"short": "Use the “increment” variable you created in each of the width and height “change by” blocks to control the rate of change."
+	},
+	{
+		"title": "Making Smooth Arcs",
+		"video": "step6.mp4",
+		"description": "Drag in one “change by” blocks and place them below the other “change by” blocks in your “repeat” block.. In the “change by” block use the drop down menu to select the variables you just created: increment.. Change the values in each “change by” block to -3.5.",
+		"short": "Change increment every iteration by adding a “change by” increment block to your loop."
+	},
+	{
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
+		"outcome": "arcs-outcome.png",
+		"background": "anishinaabearcs/index.html",
+		"software": "/applications/38/run"
+	}
+]

@@ -1,10 +1,11 @@
 import { ArrowForwardIcon, CheckIcon } from "@chakra-ui/icons";
 import { Box, Button, Center, Image, List, ListIcon, ListItem, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 export default function HomepageCard({ title, names }) {
 	const navigate = useNavigate();
+	const [searchParams, setSearchParams] = useSearchParams();
 	return (
 		<Center py={6}>
 			<Box
@@ -37,7 +38,7 @@ export default function HomepageCard({ title, names }) {
 										colorScheme="teal"
 										variant="link"
 										w={"100%"}
-										onClick={() => navigate("/" + tutorial.slug)}>
+										onClick={() => setSearchParams("name=" + tutorial.slug)}>
 										{tutorial.name}
 									</Button>
 								</ListItem>

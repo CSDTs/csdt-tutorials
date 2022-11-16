@@ -1,0 +1,60 @@
+[
+	{
+		"tutorial_title": "Woven Heaven, Tangled Earth",
+		"tool": "Woven Heaven, Tangled Earth",
+		"prefix": "whte/main/",
+		"base": "whte_main_base.xml"
+	},
+
+	{
+		"title": "Mi primer programa",
+		"video": "step1.mp4"
+	},
+	{
+		"title": "Haciendo triángulos",
+		"video": "step2.mp4"
+	},
+	{
+		"title": "Haciendo diamantess",
+		"video": "step3.mp4"
+	},
+	{
+		"title": "Controlando el Brillo",
+		"video": "step4.mp4"
+	},
+	{
+		"title": "Diseñando figuras compuestas",
+		"video": "step5.mp4"
+	},
+	{
+		"title": "Haciendo líneas",
+		"video": "step6.mp4"
+	},
+	{
+		"title": "Entendiendo los ciclos",
+		"video": "step7.mp4"
+	},
+	{
+		"title": "Creando Variables",
+		"video": "step8.mp4"
+	},
+	{
+		"title": "Ciclos de ciclos",
+		"video": "step9.mp4"
+	},
+	{
+		"title": "Organizando bloques",
+		"video": "step10.mp4"
+	},
+	{
+		"title": "Perfeccionando el diseño",
+		"video": "step11.mp4"
+	},
+	{
+		"title": "Próximos pasos",
+		"nextSteps": "Has completado el tutorial. ¡Ahora debería poder crear sus propios patrones en el software usted mismo!",
+		"outcome": "whte-main-tut.png",
+		"background": "whte/index.html",
+		"software": "whte/software.html"
+	}
+]

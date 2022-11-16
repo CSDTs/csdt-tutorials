@@ -1,12 +1,13 @@
-import { Box, Button, chakra, Flex, Heading, Stack } from "@chakra-ui/react";
+import { Box, Button, chakra, Flex, Heading, Stack, useDisclosure } from "@chakra-ui/react";
 import { useRef, useState } from "react";
-
+import FinalModal from "../../FinalModal";
 export default function StepProgressBar({ current, available }) {
 	const circles = useRef([]);
 
 	const handleClick = (step) => {
 		current.set(step);
 	};
+
 	return (
 		<Flex py="5" align="center">
 			<Box textAlign={"center"} w={"100%"}>
@@ -15,7 +16,7 @@ export default function StepProgressBar({ current, available }) {
 
 					{available.map((item, index) => (
 						<div
-							className={`circle ${index <= current.get() ? "active" : ""}`}
+							className={`circle ${index <= current.get() ? "active" : ""} cursor-pointer`}
 							key={index}
 							ref={(element) => {
 								circles.current[index] = element;

@@ -13,6 +13,7 @@ import {
 	Flex,
 	Heading,
 	Slide,
+	Text,
 	useColorModeValue,
 	useDisclosure,
 } from "@chakra-ui/react";
@@ -26,20 +27,27 @@ function SlideEx({ short, description }) {
 				onClick={onToggle}
 				cursor={"pointer"}
 				size={"sm"}
-				color={"gray.600"}
-				background={"gray.100"}
+				w={"100%"}
+				color={useColorModeValue("gray.600", "gray.300")}
+				background={useColorModeValue("gray.100", "gray.700")}
 				p={2}
 				borderRadius={"5px"}
 				_hover={{
-					background: useColorModeValue("gray.200"),
+					background: useColorModeValue("gray.200", "gray.600"),
 				}}
 				transition=".3s ease">
 				{" "}
 				{short}
 			</Heading>
 
-			<Collapse in={isOpen} animateOpacity>
-				<Box p="40px" color="gray.800" mt="4" bg="gray.100" rounded="md" shadow="md">
+			<Collapse in={isOpen} animateOpacityw={"100%"}>
+				<Box
+					p="40px"
+					color={useColorModeValue("gray.800", "gray.200")}
+					mt="4"
+					bg={useColorModeValue("gray.100", "gray.700")}
+					rounded="md"
+					shadow="md">
 					{description}
 				</Box>
 			</Collapse>
@@ -54,7 +62,7 @@ export default function StepDescription({ short, description }) {
 				boxShadow={"lg"}
 				maxW={"640px"}
 				direction={{ base: "column-reverse", md: "row" }}
-				width={"full"}
+				width={"100%"}
 				rounded={"xl"}
 				p={5}
 				mb={4}
@@ -86,8 +94,8 @@ export default function StepDescription({ short, description }) {
 					left: 0,
 					// backgroundImage: backgrounds[1 % 4],
 				}}>
-				<Flex direction={"column"} textAlign={"left"} justifyContent={"space-between"}>
-					<Heading size={"sm"} color={"gray.800"} pb={2}>
+				<Flex direction={"column"} textAlign={"left"} justifyContent={"space-between"} width={"100%"}>
+					<Heading size={"sm"} color={useColorModeValue("gray.800", "gray.100")} pb={2}>
 						Description
 					</Heading>
 

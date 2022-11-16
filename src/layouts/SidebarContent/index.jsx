@@ -1,11 +1,11 @@
-import { Box, Flex, Heading, Image, Stack } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, Stack, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { TourProvider } from "@reactour/tour";
 import { useState } from "react";
 import { StepDescription, StepVideo } from "../../features/StepContent";
 import { StepNavigation, StepProgressBar } from "../../features/StepProgression";
 
 export default function SidebarContent(props) {
-	const { info, step, setStep, available, ...styles } = props;
+	const { info, step, setStep, available, isCodeShown, ...styles } = props;
 
 	const [currentActive, setCurrentActive] = useState(0);
 
@@ -22,12 +22,13 @@ export default function SidebarContent(props) {
 			pb="10"
 			overflowX="hidden"
 			overflowY="auto"
-			bg="brand.600"
+			// bg="brand.600"
 			borderColor="blackAlpha.300"
 			borderRightWidth="1px"
 			w={96}
 			transition=".3s ease"
 			zIndex={"auto"}
+			bg={useColorModeValue("gray.50", "gray.900")}
 			{...styles}>
 			<Box py="5">
 				<Heading size={"md"}>{info?.tutorial_title}</Heading>
@@ -47,6 +48,7 @@ export default function SidebarContent(props) {
 					available={available}
 				/>
 			)}
+
 			<Stack direction="column" justifyContent="space-between" spacing={96}>
 				<Flex direction="column" fontSize="sm" color="teal" aria-label="Main Navigation">
 					{step?.description && <StepDescription description={step?.description} short={step?.short} />}
@@ -54,8 +56,11 @@ export default function SidebarContent(props) {
 					{step?.video && <StepVideo url={info?.prefix + step?.video} />}
 
 					{step?.outcome && <Image src={"assets/" + info?.prefix + step?.outcome} />}
+
+					{step?.code && isCodeShown && <Image src={"assets/" + info?.prefix + step?.code} />}
 				</Flex>
 			</Stack>
+
 			{available && available.length > 0 && (
 				<StepNavigation
 					current={{

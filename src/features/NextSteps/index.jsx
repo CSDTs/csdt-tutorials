@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function NextSteps({ nextSteps, outcome, background, software }) {
 	const navigate = useNavigate();
 	return (
-		<Flex minH={"80vh"} align={"center"} justify={"center"} bg={useColorModeValue("gray.50", "gray.800")}>
+		<Flex height={"85vh"} align={"center"} justify={"center"} bg={useColorModeValue("gray.50", "gray.800")}>
 			<Stack spacing={8} mx={"auto"} maxW={"xl"} py={12} px={6}>
 				<Box rounded={"lg"} bg={useColorModeValue("white", "gray.700")} boxShadow={"lg"} p={8}>
 					<Stack spacing={4}>
@@ -26,7 +26,11 @@ export default function NextSteps({ nextSteps, outcome, background, software }) 
 								)}
 								<Button
 									onClick={() => {
-										navigate("/");
+										if (import.meta.env.PROD) {
+											window.location.href = "/static/tutorials/index.html";
+										} else {
+											navigate("/");
+										}
 									}}
 									w={{ base: "100%", sm: "50%" }}>
 									Try another tutorial
