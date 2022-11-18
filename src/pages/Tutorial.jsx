@@ -39,11 +39,12 @@ import NextSteps from "../features/NextSteps";
 import { Footer, Navigation, SidebarContent } from "../layouts";
 
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import ChakraUIRenderer from "chakra-ui-markdown-renderer";
+import ReactMarkdown from "react-markdown";
+import FinalModal from "../features/FinalModal";
 import FirstTimeModal from "../features/FirstTimeModal";
 import StepSelectionDrawer from "../features/StepSelectionDrawer";
 import FetchService from "../services/fetch.service";
-
-import FinalModal from "../features/FinalModal";
 export default function Tutorial({ name }) {
 	const sidebar = useDisclosure();
 	const { isOpen, onOpen, onClose } = useDisclosure();
@@ -60,6 +61,8 @@ export default function Tutorial({ name }) {
 	const [ide, setIde] = useState(null);
 	const [isCodeShown, setIsCodeShown] = useState(false);
 	const [isLongDescriptionShown, setIsLongDescriptionShown] = useState(false);
+
+	const [longDescription, setLongDescription] = useState("");
 	useEffect(() => {
 		if (data) {
 			let temp = data.slice(1).map((lesson, i) => ({ ...lesson, id: i }));
@@ -77,8 +80,21 @@ export default function Tutorial({ name }) {
 
 	useEffect(() => {
 		if (currentStep?.id == availableSteps?.length - 1) onOpen();
+
+		if (currentStep?.explanation) {
+			console.log("yeet");
+			fetch(`assets/${info?.prefix}${currentStep?.explanation}`)
+				.then((response) => response.text())
+				.then((text) => setLongDescription(text))
+				.catch((error) => console.error(error));
+		} else {
+			setLongDescription("");
+		}
 	}, [currentStep]);
 
+	useEffect(() => {
+		console.log("long", longDescription);
+	}, [longDescription]);
 	return (
 		<Box
 			as="section"
@@ -189,7 +205,8 @@ export default function Tutorial({ name }) {
 									</MenuItemOption>{" "}
 									<MenuItemOption
 										value="descriptionShown"
-										onClick={() => setIsLongDescriptionShown(!isLongDescriptionShown)}>
+										onClick={() => setIsLongDescriptionShown(!isLongDescriptionShown)}
+										isDisabled={!longDescription}>
 										{isLongDescriptionShown ? "Hide" : "Show"} long description
 									</MenuItemOption>
 								</MenuOptionGroup>
@@ -260,8 +277,7 @@ export default function Tutorial({ name }) {
 									Step Description
 								</Heading>
 								<Box maxH={{ base: "20vh", md: "25vh" }} overflowY={"scroll"}>
-									{Parser().parse(currentStep?.description)}
-									{Parser().parse(currentStep?.description)}
+									<ReactMarkdown components={ChakraUIRenderer()} children={longDescription} skipHtml />
 								</Box>
 							</Box>{" "}
 						</SlideFade>

@@ -1,0 +1,71 @@
+[
+	{
+		"tutorial_title": "Cielo Tejido, Tierra Enredada",
+		"tool": "Cielo Tejido, Tierra Enredada",
+		"prefix": "whte/es/",
+		"base": "whte_main_base_es.xml"
+	},
+
+	{
+		"title": "Mi primer programa",
+		"video": "whte_es_1.mp4",
+		"explanation": "whte_es_1.md"
+	},
+	{
+		"title": "Haciendo triángulos",
+		"video": "whte_es_2.mp4",
+		"explanation": "whte_es_2.md"
+	},
+	{
+		"title": "Haciendo diamantess",
+		"video": "whte_es_3.mp4",
+		"explanation": "whte_es_3.md"
+	},
+	{
+		"title": "Controlando el Brillo",
+		"video": "whte_es_4.mp4",
+		"explanation": "whte_es_4.md"
+	},
+	{
+		"title": "Diseñando figuras compuestas",
+		"video": "whte_es_5.mp4",
+		"explanation": "whte_es_5.md"
+	},
+	{
+		"title": "Haciendo líneas",
+		"video": "whte_es_6.mp4",
+		"explanation": "whte_es_6.md"
+	},
+	{
+		"title": "Entendiendo los ciclos",
+		"video": "whte_es_7.mp4",
+		"explanation": "whte_es_7.md"
+	},
+	{
+		"title": "Creando Variables",
+		"video": "whte_es_8.mp4",
+		"explanation": "whte_es_8.md"
+	},
+	{
+		"title": "Ciclos de ciclos",
+		"video": "whte_es_9.mp4",
+		"explanation": "whte_es_9.md"
+	},
+	{
+		"title": "Organizando bloques",
+		"video": "whte_es_10.mp4",
+		"explanation": "whte_es_10.md"
+	},
+	{
+		"title": "Perfeccionando el diseño",
+		"video": "whte_es_11.mp4",
+		"explanation": "whte_es_11.md"
+	},
+	{
+		"title": "Próximos pasos",
+		"nextSteps": "Has completado el tutorial. ¡Ahora debería poder crear sus propios patrones en el software usted mismo!",
+		"outcome": "whte-main-tut.png",
+		"background": "whte/index.html",
+		"software": "whte/software.html"
+	}
+]
