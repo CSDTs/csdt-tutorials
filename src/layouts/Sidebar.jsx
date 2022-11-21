@@ -22,7 +22,7 @@ export default function Sidebar(props) {
 
 	return (
 		<SidebarContainer toggleWidth={toggleWidth}>
-			<header className="font-medium text-xl pt-5">{info?.tutorial_title}</header>
+			<header className="font-semibold text-xl pt-5 text-gray-50">{info?.tutorial_title}</header>
 			{/* <p className="pb-5">Tooled Leather </p> */}
 
 			{available && available.length > 0 && (

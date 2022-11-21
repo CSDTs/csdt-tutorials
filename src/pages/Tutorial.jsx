@@ -113,7 +113,7 @@ export default function Tutorial({ name }) {
 
 					<main className="p-4 h-full transition-all duration-300 ease-in-out w-full">
 						<section className="flex justify-between my-2 py-2 items-center">
-							<header className="font-bold text-3xl">{currentStep?.title}</header>
+							<header className="font-bold text-3xl text-gray-50">{currentStep?.title}</header>
 							<div className="flex">
 								<SettingsButton ide={ide} info={info} gui={gui} setGui={setGui} startWalkThrough={setIsOpen} />
 

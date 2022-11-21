@@ -1,0 +1,82 @@
+[
+	{
+		"tutorial_title": "Céu Tecido, Terra Emaranhada",
+		"tool": "Céu Tecido, Terra Emaranhada",
+		"prefix": "whte/bp/",
+		"base": "whte_main_base_en.xml"
+	},
+
+	{
+		"title": "Mu Primeiro Programa",
+		"video": "whte_bp_1.mp4",
+		"explanation": "whte-bp-1.md",
+		"tagline": "Inicialize seu programa."
+	},
+	{
+		"title": "Fazendo Triângulos",
+		"video": "whte_bp_2.mp4",
+		"explanation": "whte-bp-2.md",
+		"tagline": "Crie um único triângulo."
+	},
+	{
+		"title": "Fazendo Diamantes",
+		"video": "whte_bp_3.mp4",
+		"explanation": "whte-bp-3.md",
+		"tagline": "Crie um segundo triângulo para formar um diamante."
+	},
+	{
+		"title": "Controlando o Brilho",
+		"video": "whte_bp_4.mp4",
+		"explanation": "whte-bp-4.md",
+		"tagline": "Altere o brilho das contas para um tom mais escuro."
+	},
+	{
+		"title": "Projetando Figuras Compostas",
+		"video": "whte_bp_5.mp4",
+		"explanation": "whte-bp-5.md",
+		"tagline": "Crie um segundo diamante dentro do primeiro."
+	},
+	{
+		"title": "Fazendo Linhas",
+		"video": "whte_bp_6.mp4",
+		"explanation": "whte-bp-6.md",
+		"tagline": "Crie uma única linha."
+	},
+	{
+		"title": "Entendendo os Ciclos",
+		"video": "whte_bp_7.mp4",
+		"explanation": "whte-bp-7.md",
+		"tagline": "Repita seu código de linha para criar um design."
+	},
+	{
+		"title": "Criando Variáveis",
+		"video": "whte_bp_8.mp4",
+		"explanation": "whte-bp-8.md",
+		"tagline": "Use uma variável para controlar o comprimento de cada linha."
+	},
+	{
+		"title": "Ciclos de Ciclos",
+		"video": "whte_bp_9.mp4",
+		"explanation": "whte-bp-9.md",
+		"tagline": "Repita o código anterior para criar um novo design."
+	},
+	{
+		"title": "Organizando Blocos",
+		"video": "whte_bp_10.mp4",
+		"explanation": "whte-bp-10.md",
+		"tagline": "Use uma variável para controlar o ângulo de cada desenho de linha."
+	},
+	{
+		"title": "Aperfeiçoando o Design",
+		"video": "whte_bp_11.mp4",
+		"explanation": "whte-bp-11.md",
+		"tagline": "Finalize o design repetindo o código anterior."
+	},
+	{
+		"title": "Próximos Passos",
+		"nextSteps": "Você concluiu o tutorial. Agora você deve ser capaz de criar seus próprios padrões no software sozinho!",
+		"outcome": "whte-bp-main-tut.png",
+		"background": "whte/index.html",
+		"software": "whte/software.html"
+	}
+]

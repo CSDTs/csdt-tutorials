@@ -1,4 +1,4 @@
-import { Box, Button, ChakraProvider, Text } from "@chakra-ui/react";
+import { Box, Button, ChakraProvider, ColorModeScript, extendTheme, Text } from "@chakra-ui/react";
 import { TourProvider, useTour } from "@reactour/tour";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -6,6 +6,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import Homepage from "./pages/Homepage";
+const config = {
+	initialColorMode: "dark",
+	useSystemColorMode: false,
+};
+
+const theme = extendTheme({ config });
 
 const steps = [
 	{

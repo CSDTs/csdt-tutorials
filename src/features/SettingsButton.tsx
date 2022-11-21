@@ -1,6 +1,7 @@
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import {
 	Button,
+	DarkMode,
 	Menu,
 	MenuButton,
 	MenuDivider,
@@ -46,73 +47,75 @@ const SettingsButton: FC<SettingProps> = ({ ide, info, gui, setGui, startWalkThr
 		localStorage.removeItem("walkThroughPrompt");
 	};
 	return (
-		<Menu closeOnSelect={false}>
-			<MenuButton
-				leftIcon={<FaCog />}
-				rightIcon={<ChevronDownIcon />}
-				as={Button}
-				colorScheme="gray"
-				className=" sixth-step"
-				size={"sm"}>
-				Settings
-			</MenuButton>
-			<MenuList minWidth="240px" fontSize={"sm"}>
-				<MenuOptionGroup title="Tutorial" type="checkbox">
-					<MenuItemOption
-						value="toggleSplitScreen"
-						// onClick={() => setWidth(width == 96 ? "40rem" : 96)}
-						onClick={() => setGui({ ...gui, toggleWidth: !gui.toggleWidth })}>
-						Toggle Split Screen View
-					</MenuItemOption>
-					<MenuItemOption value="toggleDarkMode" onClick={toggleColorMode}>
-						Toggle Dark Mode
-					</MenuItemOption>
-					<MenuItemOption value="triggerLayoutTour" onClick={handleWalkThrough}>
-						Start Layout Tour
-					</MenuItemOption>
-				</MenuOptionGroup>
+		<DarkMode>
+			<Menu closeOnSelect={false}>
+				<MenuButton
+					leftIcon={<FaCog />}
+					rightIcon={<ChevronDownIcon />}
+					as={Button}
+					className=" sixth-step"
+					size={"sm"}
+					color="white">
+					Settings
+				</MenuButton>
+				<MenuList minWidth="240px" fontSize={"sm"} color="white" borderColor={"gray.600"}>
+					<MenuOptionGroup title="Tutorial" type="checkbox">
+						<MenuItemOption
+							value="toggleSplitScreen"
+							// onClick={() => setWidth(width == 96 ? "40rem" : 96)}
+							onClick={() => setGui({ ...gui, toggleWidth: !gui.toggleWidth })}>
+							Toggle Split Screen View
+						</MenuItemOption>
+						{/* <MenuItemOption value="toggleDarkMode" onClick={toggleColorMode}>
+							Toggle Dark Mode
+						</MenuItemOption> */}
+						<MenuItemOption value="triggerLayoutTour" onClick={handleWalkThrough}>
+							Start Layout Tour
+						</MenuItemOption>
+					</MenuOptionGroup>
 
-				{!info?.legacy && (
-					<>
-						<MenuDivider />
-						<MenuOptionGroup title="CSnap" type="checkbox">
-							<MenuItemOption value="singlePalette" onClick={() => ide.toggleSinglePalette()}>
-								Toggle Single Palette
-							</MenuItemOption>
-							<MenuItemOption value="corralBar" onClick={() => ide.toggleCorralBar()}>
-								Toggle Corral Bar
-							</MenuItemOption>
-							<MenuItemOption value="tabs" onClick={() => ide.toggleTabs()}>
-								Toggle Tabs
-							</MenuItemOption>
-							<MenuItemOption value="spriteBar" onClick={() => ide.toggleSpriteBar()}>
-								Toggle Sprite Bar
-							</MenuItemOption>
-						</MenuOptionGroup>
-					</>
-				)}
+					{!info?.legacy && (
+						<>
+							<MenuDivider />
+							<MenuOptionGroup title="CSnap" type="checkbox">
+								<MenuItemOption value="singlePalette" onClick={() => ide.toggleSinglePalette()}>
+									Toggle Single Palette
+								</MenuItemOption>
+								<MenuItemOption value="corralBar" onClick={() => ide.toggleCorralBar()}>
+									Toggle Corral Bar
+								</MenuItemOption>
+								<MenuItemOption value="tabs" onClick={() => ide.toggleTabs()}>
+									Toggle Tabs
+								</MenuItemOption>
+								<MenuItemOption value="spriteBar" onClick={() => ide.toggleSpriteBar()}>
+									Toggle Sprite Bar
+								</MenuItemOption>
+							</MenuOptionGroup>
+						</>
+					)}
 
-				<MenuDivider />
-				<MenuOptionGroup title="Help" type="checkbox">
-					<MenuItemOption value="codeShown" onClick={() => setGui({ ...gui, isCodeShown: !gui.isCodeShown })}>
-						{gui.isCodeShown ? "Hide" : "Show"} finished step code
-					</MenuItemOption>{" "}
-					<MenuItemOption
-						value="descriptionShown"
-						onClick={() => setGui({ ...gui, isLongDescriptionShown: !gui.isLongDescriptionShown })}
-						isDisabled={!gui.longDescription}>
-						{gui.isLongDescriptionShown ? "Hide" : "Show"} long description
-					</MenuItemOption>
-				</MenuOptionGroup>
-				<MenuDivider />
+					<MenuDivider />
+					<MenuOptionGroup title="Help" type="checkbox">
+						<MenuItemOption value="codeShown" onClick={() => setGui({ ...gui, isCodeShown: !gui.isCodeShown })}>
+							{gui.isCodeShown ? "Hide" : "Show"} finished step code
+						</MenuItemOption>{" "}
+						<MenuItemOption
+							value="descriptionShown"
+							onClick={() => setGui({ ...gui, isLongDescriptionShown: !gui.isLongDescriptionShown })}
+							isDisabled={!gui.longDescription}>
+							{gui.isLongDescriptionShown ? "Hide" : "Show"} long description
+						</MenuItemOption>
+					</MenuOptionGroup>
+					<MenuDivider />
 
-				<MenuGroup title="Misc">
-					<MenuItem value="resetLayoutTour" onClick={handleReset} closeOnSelect={true}>
-						Reset Layout Tour Prompt
-					</MenuItem>
-				</MenuGroup>
-			</MenuList>
-		</Menu>
+					<MenuGroup title="Misc">
+						<MenuItem value="resetLayoutTour" onClick={handleReset} closeOnSelect={true}>
+							Reset Layout Tour Prompt
+						</MenuItem>
+					</MenuGroup>
+				</MenuList>
+			</Menu>
+		</DarkMode>
 	);
 };
 

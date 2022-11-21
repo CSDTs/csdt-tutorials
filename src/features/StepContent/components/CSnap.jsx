@@ -60,9 +60,9 @@ export default function CSnap({ base, coreList, whitelist, modifiers, globalModi
 
 	return (
 		<LoadContainer isLoading={isLoading} isError={isError}>
-			<Box borderWidth="4px" borderStyle="dashed" rounded="md" height={"100%"} className=" fifth-step" my={"auto"}>
+			<div className="border-4 border-dashed rounded-md h-full fifth-step my-auto border-gray-500">
 				<chakra.iframe src={source} frameBorder="0" w={"100%"} h={"100%"} onLoad={() => checkForWorld()} ref={csnap} />
-			</Box>{" "}
+			</div>{" "}
 		</LoadContainer>
 	);
 }

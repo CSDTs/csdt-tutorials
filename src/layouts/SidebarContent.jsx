@@ -31,7 +31,7 @@ export default function SidebarContent(props) {
 			bg={useColorModeValue("gray.50", "gray.900")}
 			{...styles}>
 			<Box py="5">
-				<header className="font-medium text-xl">{info?.tutorial_title}</header>
+				<header className="font-semibold text-xl">{info?.tutorial_title}</header>
 				<p>En Espanol </p>
 			</Box>
 

@@ -1,5 +1,6 @@
 import {
 	Button,
+	DarkMode,
 	Modal,
 	ModalBody,
 	ModalCloseButton,
@@ -37,10 +38,10 @@ const FirstTimeModal: FC<ModalProps> = ({ startWalkThrough }) => {
 	}, []);
 
 	return (
-		<>
+		<DarkMode>
 			<Modal onClose={onClose} isOpen={isOpen} isCentered>
 				<ModalOverlay />
-				<ModalContent>
+				<ModalContent color={"white"}>
 					<ModalHeader>Welcome to the Tutorial</ModalHeader>
 					<ModalCloseButton />
 					<ModalBody>
@@ -73,7 +74,7 @@ const FirstTimeModal: FC<ModalProps> = ({ startWalkThrough }) => {
 					</ModalFooter>
 				</ModalContent>
 			</Modal>
-		</>
+		</DarkMode>
 	);
 };
 

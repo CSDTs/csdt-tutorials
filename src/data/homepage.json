@@ -150,7 +150,15 @@
 			},
 			{
 				"name": "Woven Heaven, Tangled Earth",
-				"slug": "whte-main"
+				"slug": "whte-en"
+			},
+			{
+				"name": "Woven Heaven, Tangled Earth (Spanish)",
+				"slug": "whte-es"
+			},
+			{
+				"name": "Woven Heaven, Tangled Earth (Portuguese)",
+				"slug": "whte-bp"
 			},
 			{
 				"name": "Anishinaabe Arcs",

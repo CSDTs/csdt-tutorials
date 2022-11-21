@@ -1,5 +1,6 @@
 import {
 	Button,
+	DarkMode,
 	Modal,
 	ModalBody,
 	ModalCloseButton,
@@ -43,10 +44,10 @@ const FinalModal: FC<ModalProps> = ({ isOpen, onOpen, onClose, nextSteps, outcom
 		window.location.href = import.meta.env.VITE_BACKGROUND_PREFIX + software;
 	};
 	return (
-		<>
+		<DarkMode>
 			<Modal onClose={onClose} isOpen={isOpen} size={"xl"} isCentered>
 				<ModalOverlay />
-				<ModalContent>
+				<ModalContent color="white">
 					<ModalHeader>Congratulations!</ModalHeader>
 					<ModalCloseButton />
 					<ModalBody>
@@ -83,7 +84,7 @@ const FinalModal: FC<ModalProps> = ({ isOpen, onOpen, onClose, nextSteps, outcom
 					<ModalFooter />
 				</ModalContent>
 			</Modal>
-		</>
+		</DarkMode>
 	);
 };
 

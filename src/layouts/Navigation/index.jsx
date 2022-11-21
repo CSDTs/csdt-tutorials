@@ -5,6 +5,7 @@ import {
 	Center,
 	chakra,
 	Collapse,
+	DarkMode,
 	Divider,
 	Flex,
 	Icon,
@@ -26,7 +27,6 @@ import {
 	Text,
 	useBreakpointValue,
 	useColorMode,
-	useColorModeValue,
 	useDisclosure,
 } from "@chakra-ui/react";
 import { FaRegQuestionCircle, FaRegUser, FaUser, FaUserAlt } from "react-icons/fa";
@@ -36,12 +36,11 @@ export default function Navigation() {
 	const prefix = import.meta.env.PROD ? "/static/img/misc" : "";
 	const currentUser = JSON.parse(localStorage.getItem("currentUser")) || "";
 
-	const { colorMode, toggleColorMode } = useColorMode();
 	return (
-		<Box position="sticky" top={0}>
+		<DarkMode position="sticky" top={0}>
 			<Flex
-				bg={useColorModeValue("white", "gray.800")}
-				color={useColorModeValue("gray.600", "white")}
+				className="bg-gray-800"
+				color={"white"}
 				minH={"60px"}
 				width={"100%"}
 				py={{ base: 2 }}
@@ -49,7 +48,7 @@ export default function Navigation() {
 				zIndex={5}
 				borderBottom={1}
 				borderStyle={"solid"}
-				borderColor={useColorModeValue("gray.200", "gray.900")}
+				borderColor={"gray.900"}
 				align={"center"}>
 				<Flex flex={{ base: 1, md: "auto" }} ml={{ base: -2 }} display={{ base: "flex", md: "none" }}>
 					<IconButton
@@ -78,7 +77,13 @@ export default function Navigation() {
 					</Flex>
 				</Flex>
 
-				<Stack flex={{ base: 1, md: 0 }} justify={"flex-end"} direction={"row"} spacing={6} verticalAlign={"middle"}>
+				<Stack
+					flex={{ base: 1, md: 0 }}
+					justify={"flex-end"}
+					direction={"row"}
+					spacing={6}
+					verticalAlign={"middle"}
+					zIndex={10}>
 					{currentUser?.username && (
 						<Menu>
 							<MenuButton as={Button} rightIcon={<ChevronDownIcon />} leftIcon={<FaUserAlt />} variant="ghost">
@@ -116,7 +121,7 @@ export default function Navigation() {
 
 					{!currentUser?.username && (
 						<>
-							<Button as={"a"} fontSize={"sm"} fontWeight={400} variant={"link"} href={"#"}>
+							<Button as={"a"} fontSize={"sm"} fontWeight={400} variant={"link"} href={"/accounts/signup/"}>
 								Sign Up
 							</Button>
 							<Button
@@ -126,19 +131,22 @@ export default function Navigation() {
 								// color={"white"}
 								variant="ghost"
 								justifyContent={"space-between"}
-								href={"#"}
-								_hover={{
-									bg: "gray.300",
-								}}>
+								href={"#"}>
 								<FaRegUser /> <chakra.span px={1}>Login</chakra.span>
 							</Button>
 						</>
 					)}
 
 					<Center height="auto" py={"10px"} color={"teal"} display={{ base: "none", md: "inline-flex" }}>
-						<Divider orientation="vertical" borderColor={useColorModeValue("gray.600", "white")} />
+						<Divider orientation="vertical" borderColor={"white"} />
 					</Center>
-					<Button as={"a"} fontSize={"lg"} fontWeight={400} variant={"link"} href={"#"} className="help-step">
+					<Button
+						as={"a"}
+						fontSize={"lg"}
+						fontWeight={400}
+						variant={"link"}
+						href={"/accounts/login/"}
+						className="help-step">
 						<FaRegQuestionCircle />
 					</Button>
 					{/* <Button onClick={toggleColorMode}>{colorMode === "light" ? <MoonIcon /> : <SunIcon />}</Button> */}
@@ -148,14 +156,14 @@ export default function Navigation() {
 			<Collapse in={isOpen} animateOpacity>
 				<MobileNav />
 			</Collapse>
-		</Box>
+		</DarkMode>
 	);
 }
 
 const DesktopNav = () => {
-	const linkColor = useColorModeValue("gray.600", "gray.200");
-	const linkHoverColor = useColorModeValue("gray.800", "white");
-	const popoverContentBgColor = useColorModeValue("white", "gray.800");
+	const linkColor = "gray.200";
+	const linkHoverColor = "white";
+	const popoverContentBgColor = "gray.800";
 
 	return (
 		<Stack direction={"row"} spacing={4} alignItems="center">
@@ -195,13 +203,7 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
 	return (
-		<Link
-			href={href}
-			role={"group"}
-			display={"block"}
-			p={2}
-			rounded={"md"}
-			_hover={{ bg: useColorModeValue("pink.50", "gray.900") }}>
+		<Link href={href} role={"group"} display={"block"} p={2} rounded={"md"} _hover={{ bg: "gray.900" }}>
 			<Stack direction={"row"} align={"center"}>
 				<Box>
 					<Text transition={"all .3s ease"} _groupHover={{ color: "pink.400" }} fontWeight={500}>
@@ -226,7 +228,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 
 const MobileNav = () => {
 	return (
-		<Stack bg={useColorModeValue("white", "gray.800")} p={4} display={{ md: "none" }}>
+		<Stack bg={"gray.800"} p={4} display={{ md: "none" }}>
 			{NAV_ITEMS.map((navItem) => (
 				<MobileNavItem key={navItem.label} {...navItem} />
 			))}
@@ -248,7 +250,7 @@ const MobileNavItem = ({ label, children, href }) => {
 				_hover={{
 					textDecoration: "none",
 				}}>
-				<Text fontWeight={600} color={useColorModeValue("gray.600", "gray.200")}>
+				<Text fontWeight={600} color={"gray.200"}>
 					{label}
 				</Text>
 				{children && (
@@ -263,13 +265,7 @@ const MobileNavItem = ({ label, children, href }) => {
 			</Flex>
 
 			<Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-				<Stack
-					mt={2}
-					pl={4}
-					borderLeft={1}
-					borderStyle={"solid"}
-					borderColor={useColorModeValue("gray.200", "gray.700")}
-					align={"start"}>
+				<Stack mt={2} pl={4} borderLeft={1} borderStyle={"solid"} borderColor={"gray.700"} align={"start"}>
 					{children &&
 						children.map((child) => (
 							<Link key={child.label} py={2} href={child.href}>

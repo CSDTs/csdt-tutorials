@@ -3,57 +3,78 @@
 		"tutorial_title": "Woven Heaven, Tangled Earth",
 		"tool": "Woven Heaven, Tangled Earth",
 		"prefix": "whte/main/",
-		"base": "whte_main_base_es.xml"
+		"base": "whte_main_base_en.xml"
 	},
 
 	{
-		"title": "Mi primer programa",
-		"video": "whte_es_1.mp4",
-		"explanation": "test.md"
+		"title": "My First Program",
+		"video": "whte_en_1.mp4",
+		"explanation": "whte-1.md",
+		"tagline": "Initialize your program."
 	},
 	{
-		"title": "Haciendo triángulos",
-		"video": "whte_es_2.mp4"
+		"title": "Making Triangles",
+		"video": "whte_en_2.mp4",
+		"explanation": "whte-2.md",
+		"tagline": "Create a single triangle."
 	},
 	{
-		"title": "Haciendo diamantess",
-		"video": "whte_es_3.mp4"
+		"title": "Making Diamonds",
+		"video": "whte_en_3.mp4",
+		"explanation": "whte-3.md",
+		"tagline": "Create a second triangle to form a diamond."
 	},
 	{
-		"title": "Controlando el Brillo",
-		"video": "whte_es_4.mp4"
+		"title": "Controlling the Brightness",
+		"video": "whte_en_4.mp4",
+		"explanation": "whte-4.md",
+		"tagline": "Change the brightness of the beads to a darker shade."
 	},
 	{
-		"title": "Diseñando figuras compuestas",
-		"video": "whte_es_5.mp4"
+		"title": "Designing Composite Figures",
+		"video": "whte_en_5.mp4",
+		"explanation": "whte-5.md",
+		"tagline": "Create a second diamond within the first."
 	},
 	{
-		"title": "Haciendo líneas",
-		"video": "whte_es_6.mp4"
+		"title": "Making Lines",
+		"video": "whte_en_6.mp4",
+		"explanation": "whte-6.md",
+		"tagline": "Create a single line."
 	},
 	{
-		"title": "Entendiendo los ciclos",
-		"video": "whte_es_7.mp4"
+		"title": "Understanding the Cycles",
+		"video": "whte_en_7.mp4",
+		"explanation": "whte-7.md",
+		"tagline": "Repeat your line code to create a design."
 	},
 	{
-		"title": "Creando Variables",
-		"video": "whte_es_8.mp4"
+		"title": "Creating Variables",
+		"video": "whte_en_8.mp4",
+		"explanation": "whte-8.md",
+		"tagline": "Use a variable to control the length of each line."
 	},
 	{
-		"title": "Ciclos de ciclos",
-		"video": "whte_es_9.mp4"
+		"title": "Cycles of Cycles",
+		"video": "whte_en_9.mp4",
+		"explanation": "whte-9.md",
+		"tagline": "Repeat your previous code to create a new design."
 	},
 	{
-		"title": "Organizando bloques",
-		"video": "whte_es_10.mp4"
+		"title": "Arranging Blocks",
+		"video": "whte_en_10.mp4",
+		"explanation": "whte-10.md",
+		"tagline": "Use a variable to control the angle of each line design."
 	},
 	{
-		"title": "Perfeccionando el diseño",
-		"video": "whte_es_11.mp4"
+		"title": "Perfecting the Design",
+		"video": "whte_en_11.mp4",
+		"explanation": "whte-11.md",
+		"tagline": "Finalize the design by repeating the previous code."
 	},
 	{
-		"title": "Próximos pasos",
-		"nextSteps": "Has completado el tutorial. ¡Ahora debería poder crear sus propios patrones en el software usted mismo!",
+		"title": "Next Steps",
+		"nextSteps": "You completed the tutorial. You should now be able to create your own patterns in the software by yourself!",
 		"outcome": "whte-main-tut.png",
 		"background": "whte/index.html",
 		"software": "whte/software.html"

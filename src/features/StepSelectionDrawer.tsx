@@ -1,4 +1,4 @@
-import { Drawer, DrawerCloseButton, DrawerContent, DrawerOverlay, useDisclosure } from "@chakra-ui/react";
+import { DarkMode, Drawer, DrawerCloseButton, DrawerContent, DrawerOverlay, useDisclosure } from "@chakra-ui/react";
 
 import { FC, useRef } from "react";
 import { FaBars } from "react-icons/fa";
@@ -24,9 +24,9 @@ const StepSelectionDrawer: FC<DrawerProps> = ({ title, steps, current, handleOnC
 	const btnRef = useRef(null);
 
 	return (
-		<>
+		<DarkMode>
 			<button
-				className="seventh-step ml-2 text-sm border border-gray-500  px-3 h-8 rounded-md leading-4 font-semibold hover:bg-gray-500 hover:bg-opacity-20 transition ease-linear duration-150"
+				className="text-white seventh-step ml-2 text-sm border border-gray-500  px-3 h-8 rounded-md leading-4 font-semibold hover:bg-gray-500 hover:bg-opacity-20 transition ease-linear duration-150"
 				aria-label="Tutorial Step Selection"
 				ref={btnRef}
 				onClick={onOpen}>
@@ -37,7 +37,9 @@ const StepSelectionDrawer: FC<DrawerProps> = ({ title, steps, current, handleOnC
 				<DrawerContent>
 					<DrawerCloseButton />
 
-					<header className="text-2xl py-4 px-6 flex-0 font-semibold leading-9 overflow-auto">{title} Steps</header>
+					<header className="text-2xl py-4 px-6 flex-0 font-semibold leading-9 overflow-auto text-white mr-4">
+						{title} Steps
+					</header>
 
 					<div className="flex-1 overflow-auto py-2 px-6">
 						{steps &&
@@ -56,14 +58,14 @@ const StepSelectionDrawer: FC<DrawerProps> = ({ title, steps, current, handleOnC
 
 					<footer className="py-4 px-6">
 						<button
-							className="w-full border border-gray-600 py-2 rounded-md font-medium hover:bg-gray-500 hover:bg-opacity-50 transition ease-linear"
+							className="w-full border border-gray-600 py-2 rounded-md font-medium hover:bg-gray-500 hover:bg-opacity-50 transition ease-linear text-white"
 							onClick={onClose}>
 							Close
 						</button>
 					</footer>
 				</DrawerContent>
 			</Drawer>
-		</>
+		</DarkMode>
 	);
 };
 export default StepSelectionDrawer;
