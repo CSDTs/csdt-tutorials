@@ -38,13 +38,15 @@ export default function Navigation() {
 
 	const { colorMode, toggleColorMode } = useColorMode();
 	return (
-		<Box>
+		<Box position="sticky" top={0}>
 			<Flex
 				bg={useColorModeValue("white", "gray.800")}
 				color={useColorModeValue("gray.600", "white")}
 				minH={"60px"}
+				width={"100%"}
 				py={{ base: 2 }}
 				px={{ base: 4 }}
+				zIndex={5}
 				borderBottom={1}
 				borderStyle={"solid"}
 				borderColor={useColorModeValue("gray.200", "gray.900")}

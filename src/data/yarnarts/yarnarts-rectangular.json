@@ -8,32 +8,32 @@
 	{
 		"title": "Setting up Your Script",
 		"video": "rect-1.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>The purple 'size' block sets the size of the stitch. Set it to 40%</li><li>Drag in the blue 'Point in direction' block and set it to 0</li><li>Finally, drag in the blue 'Go to Stitch X _ Y _' block and set x to -11 and y to 13</li><li>This will set our program to lay down stitches starting at the top left and moving its way right and down</li></ul>",
-		"short": "Initialize your script."
+		"explanation": "rect-1.md",
+		"tagline": "Initialize your script."
 	},
 	{
 		"title": "Nested Iteration",
 		"video": "rect-2.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>Drag in a yellow 'Repeat _' loop and connect it to the tail of our program</li><li>Set this outer loop to repeat 12 times. This means there are 12 rows of stitches.</li><li>We are going to drag another loop block inside the loop block we just put down. This is called a 'nested loop'</li><li>Make sure you drag the second loop body inside the outer loop body. Set this repeat to 20, because there are twenty stitches across the screen left to right</li><li>Nested loops are a good way to traverse dimensions. To travel one dimension (x), you need just one loop. To traverse two dimensions (x, y), you need a loop inside a loop, so that the outer loop traverses y and the inner loop traverses the x. Three loops inside each other traverse a 3D space, the x, y, and z.</li><li>Inside the nested loop, drag in a 'translate x by 1 stitches' block and set to 1. This moves right each inner loop iteration</li><li>Drag in the 'shift and stamp' block to actually make the stitch</li></ul>",
-		"short": "Create a nested loop. "
+		"explanation": "rect-2.md",
+		"tagline": "Create a nested loop. "
 	},
 	{
 		"title": "Y Axis Movement",
 		"video": "rect-3.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>Underneath the inner loop, so that it is in the outer loop (but not the inner), place a blue 'translate y by _ stitches' and set it to -2</li><li>This moves the stitch down 2 stitches (our costume is two stitches tall)</li><li>We need to 'carriage return' the stitches, because they are currently at the right hand side of the screen. Drag in a blue 'Translate x by _ stitches' block right underneath the block we just laid down inside the outer loop and set it to -20, the amount of stitches we just moved right across the screen. This is like returning a typewriter to the left side of the page</li><li>Notice that the repeat and translate x by _ stitches are the same amount. If you want, you can set up a variable to keep track of the horizontal movements so you don't have to repeat yourself. Set a variable to 20 with the orange 'set _ to _ ' and choose your new variable. Then drag in the oval variable shape into the inner loop's repeat amount and also into the 'translate x by _ stitches' block</li><li>Click the green flag to see our work in progress.</li></ul>",
-		"short": "Add to your script to progress the stitching along the y axis."
+		"explanation": "rect-3.md",
+		"tagline": "Add to your script to progress the stitching along the y axis."
 	},
 	{
 		"title": "Adding Color to Your Stitches",
 		"video": "rect-4.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>At the top of the inner loop, drag in a purple 'set color effect to _' block.</li><li>We're going to mirror the colors along the horizontal by using the absolute value green operator block. Find the green oval block that says '_ of _' and drag it into the color effect block. Choose 'abs', or absolute value, from the left hand drop down list. Notice we are using a block inside of a block, to perform math on a value</li><li>Let's put a block inside a block inside a block! Now drag in the green division operator ('_ / _') into the right value oval on the absolute value block. Notice how it is shaped like an oval instead of a rectangle? This means that it modifies values, and can be dropped in anywhere you normally type in numbers (which are also oval shaped) to further modify values in a specific way</li><li>Go to the motion menu and drag in the blue oval 'y position' on the left side of the '_ / _' oval</li><li>Set the right side of the green '_ / _' oval to 4. This calculates our y position using coordinates on the graph and divides it by four to set the color of the stitch</li><li>The absolute value on the y position means that the rows above and below the horizontal will be mirrored in color, because absolute value of y = -1 is equal to absolute value of y = +1, and so forth</li></ul>",
-		"short": "Add color to your stitches."
+		"explanation": "rect-4.md",
+		"tagline": "Add color to your stitches."
 	},
 	{
 		"title": "Adding Triangles",
 		"video": "rect-5.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>Let's exit our nested loops and attach the following blocks after the loops:</li><li>Drag the purple 'set color effect to _' block and attach it at the bottom of the script</li><li>Set the color effect to 3, the same color as the row of stitches at y = 0</li><li>Drag in the blue 'Go to stitch x_ y _' block and set x to -1 and y to 5</li><li>Under the mint green pen menu, drag in the 'iso triangle' block and set it to '1 stitches every 1 rows for 7 total direction -y'</li><li>Finally, drag in another 'go to stitch x _ y _' blue block and set the value to something offscreen, like x = 23 and y = 11. This will prevent our turtle costume from lingering on screen and looking like an aberrant stitch</li></ul>",
-		"short": "Add a triangle to your design."
+		"explanation": "rect-5.md",
+		"tagline": "Add a triangle to your design."
 	},
 	{
 		"title": "Next Steps",

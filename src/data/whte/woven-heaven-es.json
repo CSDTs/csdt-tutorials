@@ -9,11 +9,14 @@
 	{
 		"title": "Mi primer programa",
 		"video": "whte_es_1.mp4",
-		"explanation": "whte_es_1.md"
+		"tagline": "Configure el inicio del programa.",
+		"explanation": "whte_es_1.md",
+		"code": "test.png"
 	},
 	{
 		"title": "Haciendo triángulos",
 		"video": "whte_es_2.mp4",
+		"tagline": "¡Crea tu primer triángulo isósceles! ",
 		"explanation": "whte_es_2.md"
 	},
 	{

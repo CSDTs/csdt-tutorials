@@ -9,26 +9,26 @@
 	{
 		"title": "Setting up Your Script",
 		"video": "gees-1.mp4",
-		"description": "Drag the <img src='./img/whenClicked_block.png'/> control block to the right (click and hold while moving the mouse). This block runs your code. You start the program by clicking on the green flag, located above the stage or within the block itself. <br><br> You can clear the stage by using a <img src='./img/clear_block.png'/>  block. This block is a must when creating your quilt. It gives you a fresh start every time you run your code! <br><br>You can position your sprite by using <img src='./img/goTo.png'/> . Based on a cartesian grid, you can give this block two values (x and y). With this, you can move your sprite anywhere on the stage. To find exact coordinates, hover your mouse over the stage. Below the stage, you can see the coordinates appear.",
-		"short": "Center your sprite on the stage."
+		"explanation": "gees-1.md",
+		"tagline": "Center your sprite on the stage."
 	},
 	{
 		"title": "Modifying Your Sprite",
 		"video": "gees-2.mp4",
-		"description": "You can change what your sprite looks like! To do this, you will need to use <img src='./img/switchcostume.png'/>. With this, you can click on the block’s dropdown menu and select other costumes that are available in the current software. <br><br>Besides changing the ‘costume’ of your sprite, you can also change the size of your sprite. Using a <img src='./img/size.png'/> block, you can change the size based on the original size of the costume the sprite is wearing. Larger numbers mean larger costumes, smaller numbers mean smaller costumes.",
-		"short": "Make your sprite bigger."
+		"explanation": "gees-2.md",
+		"tagline": "Make your sprite bigger."
 	},
 	{
 		"title": "Creating Multiple Stamps",
 		"video": "gees-3.mp4",
-		"description": "You can actually repeat your code, using <img src='./img/repeat.png'/>. Given a number of times to repeat, any other blocks inside will repeat. For Gee’s Bend quilts, you can use this to change the scaling and color of each stamp as you repeat it. <br><br><img src='./img/scalebyfactor.png' style='width: 200px;'/> will take the current size of the sprite, and scale it up or down by a given percentage. So for example, if you have your program scale by 90 each time, then the sprite will scale down by 90%  of its current size. This gives you smaller and smaller stamps with each iteration (repeat). <br><br><img src='./img/setcoloreffect.png' style='width: 165px;'/> allows you to change the color of your sprite. Given a value (0 to 100), you can give your sprite a new color. <br><div class='row justify-content-center'><div class='col-5'><img src='./img/colorwheel.png' class='img-fluid'></div></div>",
-		"short": "Make multiple stamps that decreases in size every time."
+		"explanation": "gees-3.md",
+		"tagline": "Make multiple stamps that decreases in size every time."
 	},
 	{
 		"title": "Changing Colors Every Iteration",
 		"video": "gees-4.mp4",
-		"description": "Since we can scale our sprite down with each iteration, why not do the same for color? So far, we only have red as a color for each stamp. This makes it hard to see any sort of pattern. However, you can use <strong>variables</strong> to change the color of each stamp as it repeats. <br><br> A variable is basically a placeholder. You control what value that placeholder has at any point in your code. You just need to set the starting value of the variable, and allow it to change as the code executes.<br><br><img src='./img/setvar.png' style='width:100px'/> allows you to take the variable <em>color</em>, and set it to a specific starting value. This way, your design stays the same every time it runs. <img src='./img/changevar.png' style='width:125px'/> allows you to update your variable by adding or subtracting a given amount. Using both of these blocks, and the <img src='./img/repeat.png'/>, you can assign the <img src='./img/setcoloreffect.png' style='width:165px'/> block to the variable, <em>color</em>, and get a color change as your sprite repeats itself!<br><div class='row justify-content-center'><div class='col-5'><img src='./img/colorwheel.png' class='img-fluid'></div></div>",
-		"short": "Give each stamp a unique color."
+		"explanation": "gees-4.md",
+		"tagline": "Give each stamp a unique color."
 	},
 	{
 		"title": "Next Steps",

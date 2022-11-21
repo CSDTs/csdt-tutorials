@@ -5,6 +5,10 @@ module.exports = {
 		extend: {
 			height: {
 				"50vh": "50vh",
+				"csnap-normal": "calc(90vh - 8rem)",
+				"csnap-normal-md": "calc(90vh - 9rem)",
+				"csnap-text": "60vh",
+				main: "calc(100vh - 120px)",
 			},
 		},
 	},

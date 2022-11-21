@@ -8,44 +8,44 @@
 	{
 		"title": "Getting Familiar With Your Script",
 		"video": "circle-1.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>Click on the green flag at the upper right to see it run.</li><li>Let's summarize what the blocks we are going to lay down will do:</li><li>First it goes to the center (`go to x: 0 y: 0`).</li><li>Then it rotates (`turn 60 degrees`).</li><li>Then it moves (`translate by 70 of width`).</li><li>Finally it makes the copy of itself (`stamp`) and goes back to repeat this a total of 6 times (`repeat 6`).</li> <li>6 repeats of 60 degrees = 360 degrees! A full circle!</li><li>Now that you understand how it works, you can experiment! Click #3 above.</li> </ul>",
-		"short": "Click the green flag to run the script."
+		"explanation": "circle-1.md",
+		"tagline": "Click the green flag to run the script."
 	},
 	{
 		"title": "Experimenting With Parameter Changes",
 		"video": "circle-2.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>Change the `wait` from 0.5 seconds to 0 seconds (or just take out the wait blocks). Now it runs super fast. If you like keeping it slow so you can see the algorithm, keep the wait blocks at 0.5 seconds.</li><li>Change the color using the `set color effect` block (with a range of 0 to 100)</li><li>Change the tightness using the `translate` block (smaller than 70 is a tighter weave, more than 70 is a looser weave).</li><li>Change `translate` to 140, `turn` to 30, and `repeat` to 12. You just created the second ring! (30 12 = 360 degrees)</li></ul>",
-		"short": "Experiment with the parameters (the values in the blocks). "
+		"explanation": "circle-2.md",
+		"tagline": "Experiment with the parameters (the values in the blocks). "
 	},
 	{
 		"title": "Creating Two Circles",
 		"video": "circle-3.mp4",
-		"description": "<ul class='ulmatch'><li>You can now see that there are two repeat loops, creating two circles. The second loop has 12 iterations, and we know from our last experiment that it needs a 30 degree rotation angle. In crochet it’s a general rule of thumb (what computer scientists call a `heuristic`) that no matter what number 'n ' you start with, you can add 6 in each succeeding circle. Since we started with n=6, our next circle should have n=12, then 18, and so on. For any `n` the rotation angle is always 360/n.</li><li>You can change the color simply by dragging the `change color effect` block between the two repeat loops.</li><li>Finally, you can add more circles by right-clicking on the `stamp` block between the two repeat loops, selecting `duplicate` or the graphic representation of the code in a small image, and adding those blocks at the bottom of the script. Don`t forget to add 6 to the new repeat loop(making n = 18), and change the angle according to 360 / 18 = 20. </li><li>Adding one repeat loop at a time is pretty tedious, but now that we know the rules for making new circles, we can put a circle-making loop inside another loop, making many circles with a small script. When you are ready click on the next step, Many Circles. Let's start from scratch.</li > </ul>",
-		"short": "Create two additional circles."
+		"explanation": "circle-3.md",
+		"tagline": "Create two additional circles."
 	},
 	{
 		"title": "Creating Variables",
 		"video": "circle-4.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>Start with a blank template: one `When flag clicked` and one `clear` block</li><li>Attach the purple `Set size to __` block and set it to 7%</li><li>Go to the brown variable menu and click `make new variable`</li><li>In the name variable window, type `radius`</li><li>Do the same thing for a `circ` variable</li><li>Drag in and attach the brown `set ___ to __` twice and set the first to `Radius` and the second to `circ` using the drop down menu in the block.</li><li>Drag in a yellow `loop` block and attach it to the bottom. Let's fill it in using our variables!</li></ul>",
-		"short": "Create 'radius' and 'circ' variables for the script."
+		"explanation": "circle-4.md",
+		"tagline": "Create 'radius' and 'circ' variables for the script."
 	},
 	{
 		"title": "Adding Repeats",
 		"video": "circle-5.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>Change our loop from 10 to 7 iterations</li><li>Add into the loop a blue `Point at angle __` block and set to zero</li><li>Add into the loop another loop block, and this time drag in the `circ` variable for the number of iterations by dropping it inside the oval where the number of iterations is stored. This means it will iterate the same number of times that the variable `circ` is set.</li><li>Inside the `circ` loop, add a blue `go to x: 0 y: 0` block and a blue `rotate by __ degrees` block`</li><li>Use a green math symbol, in this case the divide, and drop it into the blank value on the `rotate by` block</li><li>On the left side of the green divide oval, type in 360, and on the right side drop in the `circ` variable. This will divide 360 by the value of `circ` and rotate the stitch by that amount.</li></ul>",
-		"short": "Fill out your loop by using your variables."
+		"explanation": "circle-5.md",
+		"tagline": "Fill out your loop by using your variables."
 	},
 	{
 		"title": "Finishing the Nested Loop",
 		"video": "circle-6.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>Add in a blue `translate by __ of width` block and use a green math symbol to drop in the multiplication equation in the blank space. </li><li>On the left side of the multiplication, drop in the brown variable `Radius` and on the right multiply it by 70</li><li>Add in finally the stamp block to finish off our nested loop</li></ul>",
-		"short": "Finish off the nested loop."
+		"explanation": "circle-6.md",
+		"tagline": "Finish off the nested loop."
 	},
 	{
 		"title": "Final Touches",
 		"video": "circle-7.mp4",
-		"description": "<ul class='ulmatch' style='list-style-position: inside;'><li>Remember `Radius` is the number of circles away from the center we're stitching</li><li>`circ` is the number of stitches in the circle. This changes by 6 for every increase in radius</li><li>We need to add the orange `change __ by __` block at the end of our outer loop twice for each variable, circ and Radius</li><li>Change Radius by 1 each loop</li><li>Change circ by 6 each loop</li><li>Add a blue `go to x: 0 y: 0` block outside of the loop too</li><li>This concludes our tutorial. Add a `change color effect` block if you want to change the color based on the radius or another variable</li></ul>",
-		"short": "Change the variable values at the end of the control loop."
+		"explanation": "circle-7.md",
+		"tagline": "Change the variable values at the end of the control loop."
 	},
 	{
 		"title": "Next Steps",

@@ -34,9 +34,25 @@ export default function StepVideo({ url }) {
 
 	return (
 		<>
-			<Box w="100%">
+			{/* <Box w="100%">
 				<Plyr {...plyrProps}></Plyr>
-			</Box>{" "}
+			</Box>{" "} */}
+
+			<Plyr
+				options={{
+					controls: ["play-large", "play", "progress", "current-time", "mute", "volume", "settings", "fullscreen"],
+				}}
+				source={{
+					type: "video",
+
+					sources: [
+						{
+							src: prefix + url,
+							type: "video/mp4",
+						},
+					],
+				}}
+			/>
 		</>
 	);
 }

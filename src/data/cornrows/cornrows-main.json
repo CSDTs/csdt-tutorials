@@ -24,16 +24,16 @@
 		"video": "main-1.mp4",
 		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear"],
 		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons"],
-		"description": "<ul style='list-style-position: inside;'><li>Click and hold the flag block, and move your mouse to the right</li><li>The &quot;flag&quot; block controls the start of the program</li><li>Now you can write a short program to place a plait</li><li>The &quot;go to&quot; block will tell the program where to start on the screen</li><li>The &quot;set size&quot; block will set the size of the plait</li><li>The &quot;clear&quot; block will erase all the prior drawings</li><li>The &quot;set angle&quot; block will set the angle of the plait</li></ul>",
-		"short": "Initialize your script."
+		"explanation": "cornrows-1.md",
+		"tagline": "Initialize your script."
 	},
 	{
 		"title": "Creating Another Plait",
 		"video": "main-2.mp4",
 		"whitelist": ["receiveGo", "gotoXY", "pointAtAngle", "setScale", "clear", "translatePercent", "doStamp"],
 		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons"],
-		"description": "<ul style='list-style-position: inside;'><li>Use the &quot;stamp&quot; block to &quot;stamp&quot; an image of the plait here</li><li>Then use the &quot;translate&quot; block to move in the direction determined by &quot;angle&quot;</li></ul>",
-		"short": "Create a second plait."
+		"explanation": "cornrows-2.md",
+		"tagline": "Create a second plait."
 	},
 	{
 		"title": "Creating Multiple Plaits",
@@ -49,8 +49,8 @@
 			"doRepeat"
 		],
 		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons"],
-		"description": "<ul style='list-style-position: inside;'><li>Drag in the &quot;repeat&quot; block</li><li>The &quot;flag&quot; block controls the start of the program</li><li>Put the &quot;stamp&quot; and &quot;translate by&quot; blocks inside the &quot;repeat&quot; block</li><li>Set the number of repetitions in the block</li></ul>",
-		"short": "Create a braid using multiple plaits."
+		"explanation": "cornrows-3.md",
+		"tagline": "Create a braid using multiple plaits."
 	},
 	{
 		"title": "Curling the Braid",
@@ -67,8 +67,8 @@
 			"rotateByDegrees"
 		],
 		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons"],
-		"description": "<ul style='list-style-position: inside;'><li>The braid should be curved to follow the shape of one's head</li><li>Drag the &quot;rotate&quot; block into the &quot;repeat&quot; block</li><li>Set the amount of rotation (larger numbers lead to tighter spirals)</li></ul>",
-		"short": "Add a curve to your braid."
+		"explanation": "cornrows-4.md",
+		"tagline": "Add a curve to your braid."
 	},
 	{
 		"title": "Scaling the Braid Size",
@@ -86,8 +86,8 @@
 			"newSizeOfCurrent"
 		],
 		"modifiers": ["enableSinglePalette", "disableSinglePaletteButtons"],
-		"description": "<ul style='list-style-position: inside;'><li>Drag in the &quot;scale by&quot; block into the &quot;repeat&quot; block</li><li>Set the value of the scale (small numbers shrink faster)</li></ul>",
-		"short": "Scale the size of your braid."
+		"explanation": "cornrows-5.md",
+		"tagline": "Scale the size of your braid."
 	},
 	{
 		"title": "Creating Multiple Braids Using Loops",
@@ -105,8 +105,8 @@
 			"newSizeOfCurrent"
 		],
 		"modifiers": ["disableSinglePalette"],
-		"description": "<ul style='list-style-position: inside;'><li>Take your braid (the &#39;repeat&#39; block) and put it inside another repeat block</li><li>After each braid, you will need to set size, angle, and position</li><li>To make the size larger, use the &#39;scale by&#39; block in your repeat loop after your braid, and make the number &gt;100% (try 300)</li><li>To reset the angle your can use the &#39;point at angle&#39; block</li></ul>",
-		"short": "Create multiple braids."
+		"explanation": "cornrows-6.md",
+		"tagline": "Create multiple braids."
 	},
 	{
 		"title": "Resetting the Braid's Position",
@@ -125,8 +125,8 @@
 			"setEffect"
 		],
 		"modifiers": ["disableSinglePalette"],
-		"description": "<ul style='list-style-position: inside;'><li>You can change the start location, try the upper left (-200,200)</li><li>You can change the angle of rotation (-7 goes counter clockwise) </li><li>To move the braid, use the &#39;translate by&#39; blocks to shift up and left</li></ul>",
-		"short": "Update the position of your braids."
+		"explanation": "cornrows-7.md",
+		"tagline": "Update the position of your braids."
 	},
 	{
 		"title": "Adding Some Color",
@@ -145,8 +145,8 @@
 			"setEffect"
 		],
 		"modifiers": ["disableSinglePalette"],
-		"description": "<ul style='list-style-position: inside;'><li>Add in the &quot;set costume color&quot; block to the beginning</li><li>Play with the value</li></ul>",
-		"short": "Add color to your braids."
+		"explanation": "cornrows-8.md",
+		"tagline": "Add color to your braids."
 	},
 	{
 		"title": "Next Steps",

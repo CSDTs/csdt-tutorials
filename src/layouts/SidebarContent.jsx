@@ -1,9 +1,9 @@
 import { Box, Button, Flex, Heading, Image, Stack, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { TourProvider } from "@reactour/tour";
 import { useState } from "react";
-import { StepDescription, StepVideo } from "../../features/StepContent";
-import { StepNavigation, StepProgressBar } from "../../features/StepProgression";
-
+import { StepDescription, StepVideo } from "../features/StepContent";
+import StepNavigation from "../features/StepNavigation";
+import { StepProgressBar } from "../features/StepProgression";
 export default function SidebarContent(props) {
 	const { info, step, setStep, available, isCodeShown, ...styles } = props;
 
@@ -31,7 +31,8 @@ export default function SidebarContent(props) {
 			bg={useColorModeValue("gray.50", "gray.900")}
 			{...styles}>
 			<Box py="5">
-				<Heading size={"md"}>{info?.tutorial_title}</Heading>
+				<header className="font-medium text-xl">{info?.tutorial_title}</header>
+				<p>En Espanol </p>
 			</Box>
 
 			{available && available.length > 0 && (

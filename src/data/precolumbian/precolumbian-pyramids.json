@@ -10,57 +10,57 @@
 	{
 		"title": "Set up our program",
 		"video": "step0.mp4",
-		"description": "3-Dimensional data abstracts into three axes, the x (length), z (depth), and y (height). We need to store coordinate information in each of these axes, so that we can construct blocks with which to make our pyramids using the x, y, and z coordinates. Let's create variables to store our starting values for x, y, and z, which will influence where we begin laying down our blocks. Drag in an orange 'Set _ to _' block. Choose 'StartX' from the dropdown and set it to 0. This initializes our variable StartX with a value of zero. Whenever we 'call' the variable StartX, we will retrieve a zero. Whenever we change the variable StartX, all other 'calls' of StartX will also retrieve the changed value. A variable is a storage unit whose state can be checked many times in a program. For the many numbers of time state is checked throughout the program, there is only one state of the variable at any given time in the program. With another orange block, Set 'StartY' to -90 and StartZ to 0. We will use these values in a GOTO block to set the starting location of our pyramid. (0,-90, 0) is underneath the origin. Let's practice changing one of our variables by adding 1 to it. Drag in the orange 'Change _ by _' block and choose StartZ from the drop down menu. Change it by 1. This is equal to the assignment StartZ = Start + 1. The old, starting value of zero is retrieved, one is added to it, then that value is stored into the same variable name by replacing the old value zero with 1. Finally, set variable 'SideLength' to 0. This is the number of blocks in our grids of rows and columns that make up our pyramid.",
-		"short": "Set the starting location via variables.",
+		"explanation": "pyramid-1.md",
+		"tagline": "Set the starting location via variables.",
 		"code": "0001.png"
 	},
 	{
 		"title": "Further set up our program",
 		"video": "step1.mp4",
-		"description": "Use the purple 'switch to costume' block to select box, which is the stone square that makes up our pyramid. Next, drag in the purple 'scale to x: _ y: _ z: _' block and set all values to 0.2. This sets the appropriate scale for our pyramid. Change these values to change the size. We need to use our variables to specify a starting place. Drag in a 'go to x: _ y: _ z: _' block and then drag in the orange ovals corresponding with our StartX, StartY, and StartY into the appropriate x, y, or z value. Because variables are integers, and the required type of the goto block are integer values, you can drop the variables into the block's requested value parameters.",
-		"short": "Set up the sprite's costume. position, and starting angle.",
+		"explanation": "pyramid-2.md",
+		"tagline": "Set up the sprite's costume. position, and starting angle.",
 		"code": "0002.png"
 	},
 	{
 		"title": "3-Dimensional Array",
 		"video": "step2.mp4",
-		"description": "Let's think about what 3-dimensions mean. Each dimension is an axis. An axis is a row make up of columns, with each column corresponding to a coordinate. The way we iterate through an axis is a loop. A loop is one dimensional. For example, a loop with coordinate (0) which works it way up to coordinate (10) reads a whole row of ten columns. If each column stored a different variable, we could read into a document all those values, for example. To iterate through a two dimension axis, we nest a loop inside another loop. That way, we work across a row with the inner loop, then move down the grid using the outer loop. So we work across, then move down a row, then return to the beginning of the inner loop again to iterate through the row directly beneath. This is a grid, with (length) x (width). For example, a loop with coordinate (0,0) will work its way up to coordinate (0,10), then move down a row and back to the beginning to start reading the next row at (1,0) and up to the coordinate (1,10), where it will move on to the next row at (2,0), etc. If we had a grid of numbers, with a nested loop we could read the value of the entire grid row by row into a separate document, for example. A 3-Dimensional grid has a depth associate with each 2D Coordinate. A cube, for example, is a square grid with each (x, y) coordinate having a height of the length of the side of the cube. So, a 3D coordinate could be (0,0,0) up to (0,0,10) for just the first column in the row. It would move on to (0,1,0) and work up to (0,1,10), etc. A loop inside a loop inside a loop is 3 iterations deep, which allow us to traverse all three coordinates x, y, and z in order. In order to create a boundary for the iteration, we want to make sure they only repeat for as many times as we have columns, rows, and stacks. We'll do this using the 'SideLength' variable, which remember is set to 9. Thus, by setting all repeats to the value of SideLength, we ensure that we create a structure that is 9x9x9. Of course, we want a pyramid, so we're going to be shearing off a value from SideLength each iteration of the outer loop, changing the number of times the inner loops are run, so that we get smaller and smaller layered grids of the pyramid.",
-		"short": "Create a 3D iterative loop with nested loops. ",
+		"explanation": "pyramid-3.md",
+		"tagline": "Create a 3D iterative loop with nested loops. ",
 		"code": "0003.png"
 	},
 	{
 		"title": "Variables",
 		"video": "step3.mp4",
-		"description": "Our innermost loop is going to handle the x axis. This is the single row of columns. Thus, we need to program our loop by having it to stamp a block, then move right. This will be repeated for as many times as the number of columns we have, which in our case is 9. So drop in a mint green stamp block into the inner most loop, and also include a 'change x by 20' block. Our single rows are being made. Remember, at the end of creating the single column, the innermost loop exits and we begin running cost in the middle loop. This is where we need to code a carriage return so we move down one row, and set x back to its initial value for the next iteration of the inner loop after the middle and outer loop finish an iteration and begin again from the top of the loop code. Outside our innermost loop, in the middle loop, we want to alter the z axis. This is the depth of our 2D grid, which controls the depth of rows after rows we need to create a square grid. Let's make sure we 'progress' in our z axis after one row is laid down by the inner loop by moving by 20 in the z axis. Drop the 'change z by 20' block into the code. This moves in place for the next row. A block is 20 pixels squared. However, we need to return to the original x position, because rows need to be adjacent and parallel with the earlier rows. This is like a carriage return on a typewriter returning to the left hand side of the page, on a new line. Drop in the blue 'set x to _' block and drop in the orange variable 'StartX'. Remember this maintains the starting point of the blocks, coordinate-wise, of the x-axis. We want to start again at this x-coordinate point, just down one line in the z axis.",
-		"short": "Create a 9x9 grid.",
+		"explanation": "pyramid-4.md",
+		"tagline": "Create a 9x9 grid.",
 		"code": "0004.png"
 	},
 	{
 		"title": "Building the Outer Loop",
 		"video": "step4.mp4",
-		"description": "We need to move up in 3 dimensional space each time we finish a square grid with the two inner loops. Drop in a blue 'change y by 20' block to move up. We need to shrink our layers, so that they regress 9x9, 8x8, 7x7, ..., giving us the pyramid shape. Let's do that by subtracting one from SideLength. Drop in the orange 'Change _ by _' block and select SideLength from the dropdown menu. Set 'by' to -1. This means our inner loops are decreasing becoming smaller squares, because they loop and accordingly stamp blocks for smaller and smaller amounts. We need to slightly modify our starting coordinates for our blocks layer after layer. Otherwise, they'll all be pushed to one side. Let's change StartX by 10 and also change StartZ by 10. 10 is half a block. This means we'll be shifting towards the center of the pyramid by half a block each new layer. This is perfect because we're removing one row and one column of each layer by changing SideLength by -1. This will be evenly spaced all around the pyramid. Finally, because our z axis controlling loop just finished, we need to carriage return in the z axis. Drag in a blue 'Set z to _' block and set it to the orange oval for our variable 'StartZ'. Because we also changed StartX by 10 right above, we need to 'reload' it with the new value in the x axis, so drag in a blue 'set x to _' and drop in the orange variable for 'StartX'",
-		"short": "Define the outer loop.",
+		"explanation": "pyramid-5.md",
+		"tagline": "Define the outer loop.",
 		"code": "0005.png"
 	},
 	{
 		"title": "A 'Crowning' Achievement",
 		"video": "step5.mp4",
-		"description": "The graphic has you place a go to x: y: z: with StartX, StartY, and StartZ, but this isn't necessary. Drop in a purple 'switch to costume' block and choose from the dropdown 'stork'. Drop in a purple 'scale to x: _ y: _ z: _' block and set all values to 0.2. This sets the size of the stork. You can change this if you feel like it. We need another blue 'go to x: _ y: _ z: _' block. Set x to 30, y to 90, and z to 90. This sets the position of the stork",
-		"short": "Crown the pyramid with a circling stork.",
+		"explanation": "pyramid-6.md",
+		"tagline": "Crown the pyramid with a circling stork.",
 		"code": "0006.png"
 	},
 	{
 		"title": "Put our bird into flight",
 		"video": "step6.mp4",
-		"description": "Add a blue 'angle x: 0 y: 0 z: 0' block to make sure we are pointing at the right angle. We need to make our bird circle around. First, we need to tell the program which axis to rotate around. Then we need to set the center of the turn to a slight distance away from the bird, so that it looks like its flying in a wide circle, instead of just spinning in place. Drop in a yellow 'repeat until _' control block. This uses an event to signal the loop to stop. The sky blue blocks are events. Choose 'mouse down?' and drop it into the hexagon shape on the control block. This makes the loop run until the user clicks the mouse button, after clicking the green flag in the top right of the screen. We need to program some action in our loop. Drop in the blue 'rotate x: _ y: _ z: _' and set x to zero, y to 1, and z to 0. This will rotate along the y axis, which if you twist the y axis (height) you make the stork spin like a ballerina.. Let's add some depth to our spin radius to make the stork circle instead of spin. Drop in a blue 'translate by _ of _' block and set 'by' to -1 and for the second text input type 'depth'. This shifts the stork on the z axis, which shifts it left so the encircling has a wider arc. ",
-		"short": "Animate the bird using the Rotate block.",
+		"explanation": "pyramid-7.md",
+		"tagline": "Animate the bird using the Rotate block.",
 		"code": "0007.png"
 	},
 	{
 		"title": "Run your program",
 		"video": "step7.mp4",
-		"description": "If your pyramid doesn't look the same, be sure to debug it by cross referencing the complete script below to what you have in your window. Check to make sure all the variables are the same, the coordinates are equal, and the control structure is the same (loops within loops are within each other, not adjacent, and vice versa). Use the script below to make sure your code is perfect. If everything works, take a break, then click 'Create My Own' to open the simulator where you can create your own pyramid designs and shapes. Save them to the cloud then send to your friends to show off your code!",
-		"short": "Run your program to create your pyramid!"
+		"explanation": "pyramid-8.md",
+		"tagline": "Run your program to create your pyramid!"
 	},
 	{
 		"title": "Next Steps",

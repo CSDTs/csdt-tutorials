@@ -1,22 +1,4 @@
-import {
-	Accordion,
-	AccordionButton,
-	AccordionIcon,
-	AccordionItem,
-	AccordionPanel,
-	Avatar,
-	Box,
-	Button,
-	chakra,
-	Collapse,
-	Fade,
-	Flex,
-	Heading,
-	Slide,
-	Text,
-	useColorModeValue,
-	useDisclosure,
-} from "@chakra-ui/react";
+import { Box, Collapse, Flex, Heading, useColorModeValue, useDisclosure } from "@chakra-ui/react";
 import { Parser } from "html-to-react";
 function SlideEx({ short, description }) {
 	const { isOpen, onToggle } = useDisclosure();
