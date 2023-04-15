@@ -3,7 +3,6 @@ import {
 	Box,
 	Button,
 	Center,
-	chakra,
 	Collapse,
 	DarkMode,
 	Divider,
@@ -25,6 +24,7 @@ import {
 	PopoverTrigger,
 	Stack,
 	Text,
+	chakra,
 	useBreakpointValue,
 	useColorMode,
 	useDisclosure,
@@ -37,8 +37,10 @@ export default function Navigation() {
 	const currentUser = JSON.parse(localStorage.getItem("currentUser")) || "";
 
 	return (
-		<DarkMode position="sticky" top={0}>
+		<DarkMode>
 			<Flex
+				position="sticky"
+				top={0}
 				className="bg-gray-800"
 				color={"white"}
 				minH={"60px"}
@@ -59,19 +61,12 @@ export default function Navigation() {
 					/>
 				</Flex>
 				<Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }} verticalAlign={"middle"}>
-					<Image
-						src={prefix + "/nsf.gif"}
-						boxSize={"40px"}
-						onClick={() => {
-							window.location.href = "https://www.nsf.gov/";
-						}}
-					/>
-					<Image
-						src={prefix + "/logo.svg"}
-						onClick={() => {
-							window.location.href = "/";
-						}}
-					/>
+					<a href="https://www.nsf.gov/">
+						<Image src={prefix + "/nsf.gif"} boxSize={"40px"} />
+					</a>
+					<a href="/">
+						<Image src={prefix + "/logo.svg"} />
+					</a>
 					<Flex display={{ base: "none", md: "flex" }} ml={10}>
 						<DesktopNav />
 					</Flex>
@@ -125,13 +120,14 @@ export default function Navigation() {
 								Sign Up
 							</Button>
 							<Button
+								as={"a"}
 								display={{ base: "none", md: "inline-flex" }}
 								fontSize={"sm"}
 								fontWeight={600}
 								// color={"white"}
 								variant="ghost"
 								justifyContent={"space-between"}
-								href={"#"}>
+								href={"/accounts/login/"}>
 								<FaRegUser /> <chakra.span px={1}>Login</chakra.span>
 							</Button>
 						</>
@@ -140,15 +136,18 @@ export default function Navigation() {
 					<Center height="auto" py={"10px"} color={"teal"} display={{ base: "none", md: "inline-flex" }}>
 						<Divider orientation="vertical" borderColor={"white"} />
 					</Center>
-					<Button
+					<a href="/culture/help/index.html" className="font-lg text-bold my-auto h-full inline-flex justify-center">
+						<FaRegQuestionCircle />
+					</a>
+					{/* <Button
 						as={"a"}
 						fontSize={"lg"}
 						fontWeight={400}
 						variant={"link"}
-						href={"/accounts/login/"}
+						href={"/culture/help/index.html"}
 						className="help-step">
-						<FaRegQuestionCircle />
-					</Button>
+						
+					</Button> */}
 					{/* <Button onClick={toggleColorMode}>{colorMode === "light" ? <MoonIcon /> : <SunIcon />}</Button> */}
 				</Stack>
 			</Flex>
@@ -294,5 +293,9 @@ const NAV_ITEMS = [
 	{
 		label: "About",
 		href: "/about",
+	},
+	{
+		label: "Getting Started",
+		href: "/getting-started",
 	},
 ];

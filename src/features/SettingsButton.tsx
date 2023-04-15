@@ -94,7 +94,7 @@ const SettingsButton: FC<SettingProps> = ({ ide, info, gui, setGui, startWalkThr
 						</>
 					)}
 
-					<MenuDivider />
+					{/* <MenuDivider />
 					<MenuOptionGroup title="Help" type="checkbox">
 						<MenuItemOption value="codeShown" onClick={() => setGui({ ...gui, isCodeShown: !gui.isCodeShown })}>
 							{gui.isCodeShown ? "Hide" : "Show"} finished step code
@@ -105,7 +105,7 @@ const SettingsButton: FC<SettingProps> = ({ ide, info, gui, setGui, startWalkThr
 							isDisabled={!gui.longDescription}>
 							{gui.isLongDescriptionShown ? "Hide" : "Show"} long description
 						</MenuItemOption>
-					</MenuOptionGroup>
+					</MenuOptionGroup> */}
 					<MenuDivider />
 
 					<MenuGroup title="Misc">
