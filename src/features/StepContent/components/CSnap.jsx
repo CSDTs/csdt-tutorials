@@ -32,7 +32,9 @@ export default function CSnap({ base, coreList, whitelist, modifiers, globalModi
 	useEffect(() => {
 		if (ide && modifiers) {
 			modifiers.forEach((mod) => {
-				eval(`ide.${mod}()`);
+				if (typeof ide[mod] === "function") {
+					ide[mod]();
+				}
 			});
 		}
 	}, [modifiers]);
@@ -40,13 +42,17 @@ export default function CSnap({ base, coreList, whitelist, modifiers, globalModi
 	useEffect(() => {
 		if (ide && modifiers) {
 			modifiers.forEach((mod) => {
-				eval(`ide.${mod}()`);
+				if (typeof ide[mod] === "function") {
+					ide[mod]();
+				}
 			});
 		}
 
 		if (ide && globalModifiers) {
 			globalModifiers.forEach((mod) => {
-				eval(`ide.${mod}()`);
+				if (typeof ide[mod] === "function") {
+					ide[mod]();
+				}
 			});
 		}
 		if (ide && whitelist) ide.displayTutorialBlocks(coreList, whitelist);
@@ -60,7 +66,7 @@ export default function CSnap({ base, coreList, whitelist, modifiers, globalModi
 
 	return (
 		<LoadContainer isLoading={isLoading} isError={isError}>
-			<div className="border-4 border-dashed rounded-md h-full fifth-step my-auto border-gray-500">
+			<div className="h-full my-auto border-4 border-gray-500 border-dashed rounded-md fifth-step">
 				<chakra.iframe src={source} frameBorder="0" w={"100%"} h={"100%"} onLoad={() => checkForWorld()} ref={csnap} />
 			</div>{" "}
 		</LoadContainer>
